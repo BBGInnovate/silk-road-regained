@@ -13,7 +13,7 @@ description_footer: >
 
 # SET URL_BASE == "" FOR LOCAL DEVELOPMENT, OTHERWISE USE THE PATH WHERE IT'LL BE HOSTED.
 #canonical_url_base: ""
-canonical_url_base: "http://bbginnovate.github.io/silk-road-regained"
+canonical_url_base: "https://bbginnovate.github.io/silk-road-regained"
 # canonical_url_base: "http://silkroadregained"
 
 baseurl: "" # the subpath of your site, e.g. /blog
