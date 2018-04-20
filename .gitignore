@@ -1,0 +1,12 @@
+_site
+.sass-cache
+.jekyll-metadata
+
+# Dependency directory
+node_modules
+
+_data
+ai2html
+
+_images-raw
+*.mov

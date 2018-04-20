@@ -1,0 +1,21 @@
+<div class="bbg__infobox" style="color: #888;">
+	<div class="bbg__grid__full" style="margin-bottom: 0;">
+
+		<img src="{{ site.canonical_url_base }}/img/staticmap__{{ page.country|downcase }}.jpg" style="width: 100%; max-width: none;" alt="FPO {{ page.country }} static map">
+
+		<h3 class="bbg__label" style="font-size: 14px;">{{ site.data[page.country][0].country }}</h3>
+		<p style="font-size: 14px; ">{{ site.data[page.country][0].description }}</p>
+
+		<h5 style="margin-top: 20px;">BY THE NUMBERS</h5>
+		<ul class="bbg__infobox__list" style="font-size: 14px;">
+
+{% for item in site.data[page.country][0] %}
+	{% if item[0] != "description" and item[0] != "country" %}
+			<li style="font-size: 14px;"><span class="bbg__infobox__list__label">{{ item[0] }}:</span> {{ item[1] }}</li>
+	{% endif %}
+{% endfor %}
+
+		</ul>
+
+	</div>
+</div>

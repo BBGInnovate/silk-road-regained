@@ -1,0 +1,49 @@
+/* Twitter styles */
+.bbg__twitter {
+	margin: 0;
+
+	&.inset {
+		border-radius: 5px;
+		background-color: #FFF;
+		box-shadow: 1px 1px 5px #999;
+		padding: 30px;
+
+		@media only screen and (min-width: $media__medium) {
+			.bbg__twitter__attribution {
+				margin: 10px auto;
+				max-width: 60%;
+			}
+		}
+	}
+
+	.bbg__twitter__tweet {
+		font-family: serif;
+		font-size: 170%;
+		line-height: 1.1;
+	}
+
+	.bbg__twitter__tweet a {
+		color: $color__voa-blue;
+		text-decoration: none;
+	}
+
+	.bbg__twitter__tweet a:hover {
+		text-decoration: underline;
+	}
+
+	.bbg__twitter__attribution {
+		display: block;
+		margin-top: 20px;
+	}
+
+	.bbg__twitter__attribution .bbg__mugshot--circle {
+		margin-left: 0;
+	}
+
+	.bbg__project .bbg__twitter__timestamp {
+		color: #999;
+		font-weight: normal;
+		margin-top: 5px;
+	}
+
+}

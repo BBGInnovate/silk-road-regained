@@ -1,0 +1,27 @@
+.map__container {
+	//border: 1px solid #CCC;
+	min-height: 300px;
+	width: 100%;
+
+	img {
+		max-width: none;
+	}
+}
+
+.bbg__map__popup-image {
+	display: none;
+	max-width: 100%;
+	width: 100%;
+}
+.bbg__map__popup-description {
+	display: none;
+}
+@media only screen and (min-width: 640px) {
+	.map__container {
+		min-height: 500px;
+	}
+	.bbg__map__popup-image,
+	.bbg__map__popup-description {
+		display: block;
+	}
+}

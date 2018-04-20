@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+	{% include head.html %}
+
+	<body class="bbg__project english">
+
+		{% include header.html %}
+
+			{{ content }}
+
+
+
+{% if site.development_mode %}
+<div id="siteWarning" style="position: fixed; bottom: 0; width: 100%; padding: 10px; text-align: center; background-color: #900; color: #FFF; z-index: 9999999">
+  {{ site.development_warning }}  <br/><span style="color: orange; font-weight: bold;">Please don't share it outside of the project team. xxx</span>
+</div>
+{% endif %}
+
+
+	<script type="text/javascript">
+		var mode = "editing";//"editing"; //"production";
+		var dictionary = {};
+	</script>
+
+
+
+	</body>
+
+</html>

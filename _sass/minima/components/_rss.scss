@@ -1,0 +1,25 @@
+.bbg__rss {
+	margin-top: 0;
+	padding-left: 0;
+}
+.bbg__rss li{
+	border-bottom: #666 solid 1px;
+	font-size: 16px;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	list-style: none;
+}
+
+.bbg__rss li:last-of-type{
+	border-bottom: none;
+}
+
+.bbg__rss li a{
+	color: #333;
+	text-decoration: none;
+}
+
+.bbg__rss li a:hover {
+	color: $color__voa-blue;
+	text-decoration: underline;
+}

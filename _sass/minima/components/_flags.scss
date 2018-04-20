@@ -1,0 +1,55 @@
+/* Country flags */
+.bbg__flag {
+	background-image: url(../img/flags/flag__china.jpg);
+	background-size: cover;
+	display: inline-block;
+	height: 30px;
+	margin-right: 5px;
+	vertical-align: middle;
+	width: 48px;
+}
+
+
+.bbg__flag.brunei {
+	background-image: url(../img/flags/flag__brunei.png);
+}
+
+.bbg__flag.china {
+	background-image: url(../img/flags/flag__china.jpg);
+}
+
+.bbg__flag.indonesia {
+	background-image: url(../img/flags/flag__indonesia.png);
+	border: 1px solid $color__voa-gray-lighter;
+}
+
+.bbg__flag.japan {
+	background-image: url(../img/flags/flag__japan.png);
+	border: 1px solid $color__voa-gray-lighter;
+}
+
+.bbg__flag.north-korea {
+	background-image: url(../img/flags/flag__north-korea.png);
+}
+
+.bbg__flag.south-korea {
+	background-image: url(../img/flags/flag__south-korea.jpg);
+	border: 1px solid $color__voa-gray-lighter;
+}
+
+.bbg__flag.malaysia {
+	background-image: url(../img/flags/flag__malaysia.png);
+}
+
+.bbg__flag.philippines {
+	background-image: url(../img/flags/flag__philippines.png);
+	border-left: 1px solid $color__voa-gray-lighter;
+}
+
+.bbg__flag.taiwan {
+	background-image: url(../img/flags/flag__taiwan.png);
+}
+
+.bbg__flag.vietnam {
+	background-image: url(../img/flags/flag__vietnam.png);
+}

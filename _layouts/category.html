@@ -1,0 +1,92 @@
+---
+layout: default
+---
+{% for cat in site.categories_list %}
+	{% if cat.name == page.category %}
+		{% assign currentCat = forloop.index0 %}
+	{% endif %}
+{% endfor %}
+
+<script type="text/javascript">
+	var currentEntity = "{{ site.categories_list[currentCat].nameSheet }}";
+</script>
+<script src="{{ site.canonical_url_base }}/js/script-story.js"></script>
+
+
+	<style type="text/css">
+		
+	</style>
+
+
+
+<div class="category bbg__content">
+	<div class="bbg__grid__full bbg__border-sides" style="padding-top: 45px;">
+		<div class="bbg__grid" style="margin-bottom: 4px;">
+
+			<h3 class="bbg__kicker bbg__hide-large bbg__agency bbg__agency--{{ site.categories_list[currentCat].name }}" style="margin-top: 30px; margin-bottom: 0;">{{ site.categories_list[currentCat].nameFull }}</h3>
+	
+	{% unless page.content == '' %}
+			<div style="padding: 10px 5%; background-color: #F1F1F1; line-height: 1.5; border-radius: 0 0 15px 15px; margin-bottom: 20px;">
+				<!--<p>{{ page.content }}</p>-->
+				<p>{{ site.categories_list[currentCat].description }}</p>
+			</div>
+	{% endunless %}
+
+		</div>
+
+
+
+
+
+
+		<div class="bbg__grid" style="margin: 0 auto 10px auto;">
+			<div class="bbg__featured-post">
+				
+				<a class="post-link" href="{{ site.canonical_url_base }}{{ site.categories[page.category][0].url | relative_url }}" style=" text-decoration: none;">
+				  {% if site.categories[page.category][0].image %}
+					<img src="{{ site.canonical_url_base }}/img/{{ site.categories[page.category][0].image }}" alt="{{ site.categories[page.category][0].cutline }}"  alt="{% if site.categories[page.category][0].cutline %}{{ site.categories[page.category][0].cutline }} {% endif %}" style="max-width: none; width: 100%;">
+				  {% else %}
+					<img src="https://placehold.it/1280x720">
+				  {% endif %}
+
+					<h2 class="bbg__featured-post__title">
+					  {{ site.categories[page.category][0].title }}
+					</h2>
+				</a>
+				<p style="">{{ site.categories[page.category][0].excerpt | strip_html }}</p>
+			</div>
+		</div>
+
+
+
+
+
+
+
+		<div class="bbg__grid bbg__portfolio-grid">
+	  <!--
+	  {% assign counter = 0 %}
+	  {% for post in site.categories[page.category] %}
+		{% if counter >0 %}
+		 --><div class="bbg__grid__element bbg__portfolio-grid__item">
+				<!--<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>-->
+				<a class="post-link" href="{{ site.canonical_url_base }}{{ post.url | relative_url }}">
+				{% if post.thumbnail %}
+				  <img src="{{ site.canonical_url_base }}/img/{{ post.thumbnail }}" alt="{%if post.cutline%}{{ post.cutline }} {% endif %}"/>
+				{% else %}
+				  <img src="https://placehold.it/640x360">
+				{% endif %}
+				  <h3>
+					{{ post.title | escape }}
+				  </h3>
+				</a>
+			  </div><!--
+		  {% endif %}
+		  {% assign counter = counter | plus: 1 %}
+		  {% endfor %}
+		  -->
+		</div>
+	</div>
+</div>
+
+{% include footer.html %}

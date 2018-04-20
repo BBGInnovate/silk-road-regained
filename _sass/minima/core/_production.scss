@@ -1,0 +1,28 @@
+/* 
+//Minor styles that are only needed during production/editing process 
+*/
+.bbg__publish-warning {
+	background-color: $color__voa-red--dark;
+	color: #FFF; 
+	font-size: 14px;
+	padding: 10px 5%;
+	pointer-events: none;
+	position: fixed;
+		bottom: 0;
+	width: 100%;
+	z-index: 9999;
+
+	.bbg__publish-warning__close-button {
+		cursor: pointer; cursor: hand;
+		float: right;
+		pointer-events: auto;
+	}
+
+	.bbg__publish-warning__title {
+		margin-bottom: 0;
+	}
+
+	.bbg__publish-warning__description {
+		margin: 0;
+	}
+}

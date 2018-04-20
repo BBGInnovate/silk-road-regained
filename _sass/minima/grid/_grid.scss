@@ -1,0 +1,140 @@
+/* Basic grid */
+.bbg__grid,
+.bbg__grid__full {
+	margin: 0 auto 1rem auto;
+	max-width: $media__extra-large;
+	padding: 0 5%;
+	width: 100%;
+}
+
+.bbg__grid__full {
+	padding: 0;
+}
+
+.bbg__grid:before,
+.bbg__grid:after,
+.bbg__grid__full:before,
+.bbg__grid__full:after {
+	content: " ";
+	display: table;
+}
+
+.bbg__grid:after,
+.bbg__grid__full:after {
+	clear: both;
+}
+
+
+.bbg__grid__element,
+.bbg__grid__one-half,
+.bbg__grid__one-third {
+	margin: 0 auto;
+	padding: 0;
+	vertical-align: top;
+	width: 100%;
+}
+
+.bbg__grid__one-half:first-of-type {
+	margin-bottom: 30px;
+}
+
+
+.bbg__grid__element,
+.bbg__grid__one-third,
+.bbg__grid__two-thirds {
+	@media only screen and (min-width: $media__medium) {
+		&.border-right {
+			border-right: 1px solid #F1F1F1;
+			padding-right: 2%; 
+		}
+		&.border-left {
+			border-left: 1px solid #F1F1F1;
+			padding-left: 2%; 
+		}
+	}
+}
+
+
+@media only screen and (min-width: $media__medium) and (max-width: $media__large--) {
+	.bbg__grid__element {
+		display: inline-block;
+		margin-right: 1.5%;
+		width: 48.2%;
+	}
+
+	.bbg__grid__element:nth-child(2n) {
+		margin-right: 0;
+	}
+}
+
+@media only screen and (min-width: $media__large) {
+	.bbg__grid__element {
+		display: inline-block;
+		margin-right: 1.25%;
+		width: 32.5%;
+	}
+
+	.bbg__grid__element:nth-child(3n) {
+		margin-right: 0;
+	}
+
+	.bbg__grid__one-half:first-of-type {
+		margin-bottom: 30px;
+		//padding-right: 20px;
+	}
+}
+
+@media only screen and (min-width: $media__medium) {
+	.bbg__grid__one-half {
+		display: inline-block;
+		margin-right: 1.5%;
+		vertical-align: top;
+		width: 49.25%;
+	}
+
+	.bbg__grid__one-half:nth-child(2n) {
+		margin-right: 0;
+	}
+
+	.bbg__grid__one-half:first-of-type {
+		margin-bottom: 0;
+	}
+
+	.bbg__grid__one-third {
+		display: inline-block;
+		margin-right: 2%;
+		vertical-align: top;
+		width: 32%;
+	}
+	.bbg__grid__one-third:nth-child(3n) {
+		margin-right: 0%;
+	}
+	.bbg__grid__two-thirds {
+		display: inline-block;
+		margin-right: 2%;
+		vertical-align: top;
+		width: 66%;
+	}
+}
+
+
+@media only screen and (min-width: $media__medium) and (max-width: 700px) {
+	.bbg__grid__two-thirds {
+		.bbg__grid__one-half {
+			margin-right: 0;
+			width: 100%;
+		}
+	}
+
+	.bbg__footer .bbg__mugshot {
+		width: 100%;
+		max-width: none;
+	}
+}
+
+
+@media only screen and (min-width: $media__large) {
+	.bbg__grid {
+		margin-bottom: 0;
+	}
+}

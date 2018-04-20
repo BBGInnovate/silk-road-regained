@@ -1,0 +1,56 @@
+<header class="site-header" role="banner">
+
+		<div class="bbg__navbar white" style="z-index: 100000;">
+			<div class="bbg__grid__full">
+				<div class="bbg__grid">
+					<a href="{{ site.canonical_url_base }}/" class="bbg__navbar__title">The Dragon’s Reach</a>
+
+					<div id="menuButton" class="bbg__navbar__toggle"></div>
+
+					<nav id="main-nav" role="navigation" class="main-menu-nav">
+						<ul id="main-menu" class="sm sm-clean" data-smartmenus-id="14762810590939192">
+							{% if page.layout == "home" %}
+								<li class="bbg__navbar__tab"><a href="{{ site.canonical_url_base }}/map/">About</a></li>
+
+								<li class="bbg__navbar__comparison"><a href="javascript:void(0);" class="has-submenu" id="sm-14762810590939192-1" aria-haspopup="true" aria-controls="sm-14762810590939192-2" aria-expanded="false"><span class="sub-arrow">+</span>Networks</a>
+
+									<ul id="sm-14762810590939192-2" role="group" aria-hidden="true" aria-labelledby="sm-14762810590939192-1" aria-expanded="false">
+										{% comment %}loop through all posts and if they match the language of the parent, then include them.{% endcomment %}
+										{% for cat in site.categories_list %}
+											<li><a href="{{ site.canonical_url_base }}/{{ cat.name }}/">{{ cat.nameFull }}</a></li>
+										{% endfor %}
+
+									</ul>
+
+								</li>
+
+							{% else %}
+	
+								<li class="bbg__navbar__tab"><a href="{{ site.canonical_url_base }}/map/">About</a></li>
+
+								<li class="bbg__navbar__comparison"><a href="javascript:void(0);" class="has-submenu" id="sm-14762810590939192-1" aria-haspopup="true" aria-controls="sm-14762810590939192-2" aria-expanded="false"><span class="sub-arrow">+</span>Broadcasters</a>
+
+									<ul id="sm-14762810590939192-2" role="group" aria-hidden="true" aria-labelledby="sm-14762810590939192-1" aria-expanded="false">
+										
+										{% for cat in site.categories_list %}
+											<li><a href="{{ site.canonical_url_base }}/{{ cat.name }}/">{{ cat.nameFull }}</a></li>
+										{% endfor %}
+
+									</ul>
+
+								</li>
+
+
+
+							{% endif %}
+
+							<li><a id="shareTwitter" title="Share on Twitter" class="social-share-link twitter" href="javascript:void(0);"><div class="social-icon"></div><span class="social-share-text">Share on Twitter</span></a></li>
+							<li><a id="shareFacebook" title="Share on Facebook" class="social-share-link facebook" href="https://www.facebook.com/sharer/sharer.php"><div class="social-icon"></div><span class="social-share-text">Share on Facebook</span></a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+
+</header>
+
