@@ -51,16 +51,48 @@ function showInfo(data) {
 
 	$("#storyPromo").html(promo)
 	*/
-	var RSSnumberOfStories = 3;
 
 	var rss = "";
-	for (var i = 0; i < data[currentEntity].elements.length; i++){
-		if (i < RSSnumberOfStories + 1){
-			rss += '<li><a href="' + data[currentEntity].elements[i].link + '">' + data[currentEntity].elements[i].headline + '</a></li>';
+
+	if(currentEntity != "Alhurra"){
+		var RSSnumberOfStories = 3;
+		for (var i = 0; i < data[currentEntity].elements.length; i++){
+			if (i < RSSnumberOfStories + 1){
+				rss += '<li><a href="' + data[currentEntity].elements[i].link + '">' + data[currentEntity].elements[i].headline + '</a></li>';
+			}
 		}
+		$("#rssList").html(rss);
+
+	} else {
+		// =================================
+		// |  Parsing RSS with Javascript  |
+		// |  to reset the styles.         |
+		// =================================
+		//https://www.raymondcamden.com/2015/12/08/parsing-rss-feeds-in-javascript-options/
+
+	    var rssStoryCount = 4;
+
+		$(document).ready(function() {
+
+			var yql = "https://query.yahooapis.com/v1/public/yql?q=select%20title%2Clink%2Cdescription%20from%20rss%20where%20url%3D%22https%3A%2F%2Fwww.alhurra.com%2Fapi%2Fziiqrejgqq%2F%22&format=json&diagnostics=true&callback=";
+
+			$.getJSON(yql, function(res) {
+				logger(res);
+
+				var rss = ""
+				for (var i = 0; i < rssStoryCount; i++){
+					logger(res.query.results.item[i].title)
+					rss += "<li><a href='" + res.query.results.item[i].link + "'>" + res.query.results.item[i].title + "</a></li>";
+				}
+				$("#rssList").html(rss);
+				//$("#rssListBBG").html(rss);
+
+			}, "jsonp");
+
+		});
+
 	}
 
-	$("#rssList").html(rss);
 }
 
 

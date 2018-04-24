@@ -1,0 +1,118 @@
+---
+layout: default
+---
+
+
+	<style type="text/css">
+		
+		.bbg__project a {
+			color: #000;
+			text-decoration: none;
+		}
+
+		.bbg__navbar__tab a {
+			color: #999;
+		}
+
+		.balance-text {
+			text-align: center;
+		}
+
+		.bbg__project .bbg__graphic__intro a {
+			text-decoration: underline;
+		}
+
+		#videoCard {
+				display: block;
+				height: auto;
+				width: 100%;
+				z-index: 1;
+		}
+
+		@media only screen and (min-width: 640px) {
+			#videoCard {
+				min-height: 100%;
+				min-width: 100%; 
+				position: absolute;
+					top: 50%;
+					left: 90%;
+				transform: translate(-90%, -50%);
+				width: auto;
+			}
+		}
+
+	</style>
+
+	<script src="js/scripts.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:900|Racing+Sans+One" rel="stylesheet">
+
+		<section class="bbg__section__full-width bbg__section__title" style="/*background-image: url('img/animation-train4.gif'); background-position: left 95% center;*/">
+			<div class="bbg__title-card__shadow"></div>
+
+
+			<video playsinline autoplay muted loop id="videoCard" poster="img/train-poster.jpg">
+				<source src="" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+
+
+			<div class="bbg__grid__full bbg__hide-mobile" style="position: absolute; bottom: 0; width: 100%; z-index: 9999; margin-bottom: 40px; max-width: none; ">
+				<div class="bbg__title-card" style="text-align: center; left: 0; width: 100%;">
+					<div style="max-width: 1080px; margin: 0 auto;">
+						
+						<h1 class="bbg__title" style=" text-transform: uppercase; margin-bottom: 10px; line-height: .9; font-family: 'Racing Sans One', sans-serif; font-family: 'Montserrat', sans-serif; color: black; text-shadow: none;">The<br/> Dragon’s Reach</h1>
+						<h2 class="bbg__title__subhed balance-text" style="color: #900; max-width: 80%; margin: 0 auto;">Tracking China’s Belt and Road Initiative</h2>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div style="position: absolute; bottom: 0; width: 100%; z-index: 9999;" >
+				<div style="max-width: 1080px; margin: 0 auto;">
+					<a href="#intro" id="introLink">
+						<div class="bbg__nav__down-arrow"><span class="arrow"></span></div>
+					</a>
+				</div>
+			</div>
+
+		</section>
+
+		<section class="bbg__section__full-width bbg__show-mobile" style=" box-shadow: 0 0 2px rgba(20,20,20,0); position: relative; z-index: 99999999; background-color: #FFF; ">
+
+			<div class="bbg__grid__full " style="margin: 0 auto; max-width: none; padding-top: 40px;">
+				<div class="bbg__title-card bbg__show-mobile" style="text-align: center; left: 0; width: 100%; position: relative;">
+					<div style="max-width: 1080px; margin: 0 auto;">
+						
+						<h1 class="bbg__title" style=" text-transform: uppercase; margin-bottom: 10px; line-height: .9; font-family: 'Racing Sans One', sans-serif; font-family: 'Montserrat', sans-serif; color: black; text-shadow: none;">The<br/> Dragon’s Reach</h1>
+						<h2 class="bbg__title__subhed balance-text" style="color: #900; max-width: 80%; margin: 0 auto;">Tracking China’s Belt and Road Initiative</h2>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="intro" class="bbg__section__full-width">
+
+			<div class="bbg__grid__full" style="margin-bottom: 0;">
+				<div class="bbg__grid">
+					<h3 class="bbg__graphic__intro" style="color: #333; max-width: 80%; margin: 0 auto; padding: 50px 0 30px 0; text-align: center;">{{ site.description }}</h3>
+				</div>
+			</div>
+		</section>
+
+
+
+
+</div>
+
+
+{% include footer.html %}
+
+
+
+{% if site.development_mode %}
+<div id="siteWarning" style="position: fixed; bottom: 0; width: 100%; padding: 10px; text-align: center; background-color: #900; color: #FFF;">
+  {{ site.development_warning }}
+</div>
+{% endif %}

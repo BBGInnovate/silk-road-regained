@@ -54,6 +54,18 @@
 	}
 }
 
+@media only screen and (min-width: $media__small) and (max-width: $media__medium--) {
+	.bbg__grid__element {
+		display: inline-block;
+		margin-right: 1.5%;
+		width: 48.2%;
+	}
+
+	.bbg__grid__element:nth-child(2n) {
+		margin-right: 0;
+	}
+}
+
 
 @media only screen and (min-width: $media__medium) and (max-width: $media__large--) {
 	.bbg__grid__element {

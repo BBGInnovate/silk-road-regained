@@ -3,42 +3,9 @@
 
 .bbg__project {
 
-	.bbg__section__full-width.landing-page {
-
-		.bbg__title-card {
-
-			/* This section will probably change depending on project */
-			top: 50px;
-			text-align: center;
-
-			@media only screen and (min-height: $media__small) {
-				top: 90px;
-			}
-			@media only screen and (min-height: $media__medium) {
-				top: 20%;
-			}
-			@media only screen and (min-height: $media__large) {
-				top: 30%;
-			}
-
-
-			.bbg__title {
-				text-transform: uppercase;
-			}
-
-		}
-
-
-
-	}
-
-
-
 	.balance-text {
 		text-wrap: balance;  /* Apply (proposed) CSS style */
 	}
-
-
 
 	a {
 		text-decoration: none;
@@ -216,6 +183,10 @@
 		h3 {
 			font-size: 15px;
 		}
+		p {
+			font-size: 14px;
+			margin-top: 5px;
+		}
 		margin-bottom: 10px;
 	}
 	@media only screen and (min-width: $media__small) {
@@ -232,7 +203,9 @@
 
 	@media only screen and (min-width: $media__medium) {
 		.bbg__story__secondary {
-			margin-bottom: 15px;
+			border-bottom: 1px dotted #CCC;
+			margin-bottom: 10px;
+			padding-bottom: 10px;
 			img {
 				float: none;
 				margin-right: 0;
@@ -241,6 +214,17 @@
 			}
 			h3 {
 				font-size: 14px;
+			}
+			p {
+				display: none;
+			}
+		}
+	}
+
+	@media only screen and (min-width: $media__medium-large) {
+		.bbg__story__secondary {
+			p {
+				display: block;
 			}
 		}
 	}

@@ -11,17 +11,13 @@ description_footer: >
   This project explores China's growing investments around the world. It’s a joint initiative by Radio Free Europe/Radio Liberty, Middle East Broadcasting Networks, Voice of America, Radio Free Asia and the Office of Cuba Broadcasting. They’re overseen by the Broadcasting Board of Governors.
 
 
-# SET URL_BASE == "" FOR LOCAL DEVELOPMENT, OTHERWISE USE THE PATH WHERE IT'LL BE HOSTED.
+# SET URL_BASE == "" FOR LOCAL DEVELOPMENT OR PROD DEPLOYMENT, OTHERWISE USE THE PREVIEW PATH WHERE IT'LL BE HOSTED.
 canonical_url_base: ""
-# canonical_url_base: "https://bbginnovate.github.io/silk-road-regained"
-# canonical_url_base: "http://silkroadregained.com"
-
-baseurl: "" # the subpath of your site, e.g. /blog
 
 
 
 # ADD A WARNING FLAG 
-development_mode: false
+development_mode: true
 development_warning: This site is currently under active development.
 
 
@@ -31,7 +27,7 @@ categories_list:
     namePretty: VOA
     nameSheet: VOA
     nameFull: Voice of America
-    logo: http://internetfreedom.io/img/logo__voa.png
+    logo: /img/logo__voa.png
     url: https://www.voanews.com
     urlPretty: voanews.com
     description: >
@@ -40,8 +36,8 @@ categories_list:
     namePretty: RFE/RL
     nameSheet: RFERL
     nameFull: Radio Free Europe / Radio Liberty
-    logo: http://internetfreedom.io/img/logo__rferl.png
-    url: https://www.rferl.org
+    logo: /img/logo__rferl.png
+    url: https://www.rferl.org/
     urlPretty: rferl.org
     description: >
       RFE/RL’s mission is to promote democratic values and institutions by reporting the news in countries where a free press is banned by the government or not fully established. Our journalists provide what many people cannot get locally: uncensored news, responsible discussion, and open debate.
@@ -49,7 +45,7 @@ categories_list:
     namePretty: RFA
     nameSheet: RFA
     nameFull: Radio Free Asia
-    logo: http://internetfreedom.io/img/logo__rfa.png
+    logo: /img/logo__rfa.png
     url: https://www.rfa.org
     urlPretty: rfa.org
     description: Radio Free Asia brings award-winning, domestic journalism and uncensored content to people in six Asian countries that restrict free speech, freedom of the press, and access to reliable information beyond their borders. RFA also provides educational and cultural programming, as well as forums for audiences to engage in open dialogue and freely express opinions.
@@ -57,19 +53,19 @@ categories_list:
     namePretty: Alhurra
     nameSheet: Alhurra
     nameFull: Alhurra
-    logo: http://internetfreedom.io/img/logo__mbn.png
+    logo: /img/logo__mbn.png
     url: https://www.alhurra.com
     urlPretty: alhurra.com
     description: Middle East Broadcasting Networks is the non-profit news organization that operates Alhurra Television, Radio Sawa and MBN Digital reaching audiences in 22 countries across the Middle East and North Africa.
   - name: martí
-    namePretty: Martí
+    namePretty: Martí Noticias
     nameSheet: Martí
     nameFull: Martí Noticias
-    logo: https://placehold.it/90x90
+    logo: /img/logo__ocb.png
     url: https://www.martinoticias.com
     urlPretty: martinoticias.com
     description: >
-      The Office of Cuba Broadcasting’s mission is to promote freedom and democracy by providing the people of Cuba with objective news and information programming.
+      Radio and Television Martí and <a href="https://www.martinoticias.com/">martinoticias.com</a> are overseen by the Office of Cuba Broadcasting, whose mission is to promote freedom and democracy by providing the people of Cuba with objective news and information programming.
 
 
 
@@ -89,7 +85,7 @@ exclude:
   - sidebar-app
   - README.md
   - TECHNICAL.md
-#- animation
+  - animation
 sass:
   style: compressed
 

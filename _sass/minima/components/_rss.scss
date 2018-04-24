@@ -1,8 +1,14 @@
 .bbg__rss {
 	margin-top: 0;
 	padding-left: 0;
+
+	&.Alhurra,
+	&.rtl {
+		text-align: right;
+		direction: rtl;
+	}
 }
-.bbg__rss li{
+.bbg__rss li {
 	border-bottom: #666 solid 1px;
 	font-size: 16px;
 	margin-bottom: 10px;
@@ -10,11 +16,11 @@
 	list-style: none;
 }
 
-.bbg__rss li:last-of-type{
+.bbg__rss li:last-of-type {
 	border-bottom: none;
 }
 
-.bbg__rss li a{
+.bbg__rss li a {
 	color: #333;
 	text-decoration: none;
 }

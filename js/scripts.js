@@ -118,7 +118,12 @@ $(window).on('load', function() {
 
 				var currentWidth = $(window).width();
 
-				$("#myVideo").attr("src", "animation/train-with-smoke_5.mp4");
+				$("#videoCard").attr("src", "img/train.mp4?no-cache=0");
+				videoLoaded = true;
+			} else {
+				var currentWidth = $(window).width();
+
+				$("#videoCard").attr("src", "img/train.mp4?no-cache=0");
 				videoLoaded = true;
 			}
 		}

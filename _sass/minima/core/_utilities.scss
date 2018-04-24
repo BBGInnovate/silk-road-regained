@@ -1,52 +1,67 @@
 // utility classes
 
-.bbg__clear:before,
-.bbg__clear:after {
-	content: " ";
-	display: table;
-}
+.bbg__project {
 
-.bbg__clear:after {
-	clear: both;
-}
+	.bbg__clear:before,
+	.bbg__clear:after {
+		content: " ";
+		display: table;
+	}
 
-.bbg__rule {
-		&.wide-left {
-			border-top: 1px solid #666;
-			padding-top: 20px; 
-		}
+	.bbg__clear:after {
+		clear: both;
+	}
+
+	.bbg__rule {
+			&.wide-left {
+				border-top: 1px solid #666;
+				padding-top: 20px; 
+			}
 
 
-	@media only screen and (min-width: 640px) {
-		&.wide-right {
-			border-right: 1px solid #F1F1F1;//$border__solid-light;
-			padding-right: 2%; 
-		}
-		&.wide-left {
-			border-top: none;
-			border-left: 1px solid #666;//$border__solid-light;
-			padding-top: 0;
-			padding-left: 2%; 
+		@media only screen and (min-width: 640px) {
+			&.wide-right {
+				border-right: 1px solid #F1F1F1;//$border__solid-light;
+				padding-right: 2%; 
+			}
+			&.wide-left {
+				border-top: none;
+				border-left: 1px solid #666;//$border__solid-light;
+				padding-top: 0;
+				padding-left: 2%; 
+			}
 		}
 	}
-}
 
-@media only screen and (max-width: media__medium) {
-	.bbg__no-mobile {
-		display: none;
+	@media only screen and (max-width: $media__medium) {
+		.bbg__no-mobile {
+			display: none !important;
+		}
 	}
-}
 
-@media only screen and (max-width: media__medium) , screen and (max-height: 475px) {
-	.bbg__no-mobile {
-		display: none;
+	@media only screen and (max-width: $media__medium) , screen and (max-height: 475px) {
+		.bbg__no-mobile {
+			display: none;
+		}
 	}
-}
 
 
+	.bbg__hide-mobile {
+		@media only screen and (max-width: $media__medium) {
+			display: none;
+		}
+	}
+	.bbg__show-mobile {
+		display: block;
+		@media only screen and (min-width: $media__medium) {
+			display: none;
+		}
+	}
 
-@media only screen and (min-width: $media__medium-large) and (max-width: $media__large--) {
-	.bbg__no-tablet {
-		display: none;
+
+	@media only screen and (min-width: $media__medium-large) and (max-width: $media__large--) {
+		.bbg__no-tablet {
+			display: none;
+		}
 	}
 }
