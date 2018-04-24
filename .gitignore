@@ -5,7 +5,7 @@ _site
 # Dependency directory
 node_modules
 
-_data
+# _data
 ai2html
 
 _images-raw

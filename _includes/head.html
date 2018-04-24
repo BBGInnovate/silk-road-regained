@@ -1,18 +1,26 @@
 <head>
 
-	<title>{% if page.title %}{{ site.title_short | escape }} {{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-	<meta name="description" content="{{ page.excerpt | default: site.description_short | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+	<title>{% if page.title %}{{ site.title_short }} {{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+	<meta name="description" content="{{ page.excerpt | default: site.description_short | strip_html | normalize_whitespace | truncate: 225 | escape }}">
 
-  	<meta name='viewport' content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'/>
+	<meta name='viewport' content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'/>
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/retina_icon.png">
+
+	<link type="image/x-icon" rel="shortcut icon" href="img/webApp/favicon.ico" />
+	<link rel="apple-touch-icon" sizes="144x144" href="img/webApp/ico-144x144.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="img/webApp/ico-114x114.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="img/webApp/ico-72x72.png" />
+	<link rel="apple-touch-icon-precomposed" href="img/webApp/ico-57x57.png" />
+	<link rel="icon" sizes="192x192" href="img/webApp/ico-192x192.png" />
+	<link rel="icon" sizes="128x128" href="img/webApp/ico-128x128.png" />
+
 
 	<!-- for Google -->
-	<meta name="description" content="{{ page.excerpt | default: site.description_short | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-	<meta name="keywords" content="China, investments, Broadcasting Board of Governors, BBG, RFA, RFERL, VOA, Voice of America, Radio Free Asia, Radio Free Europe / Radio Liberty, Middle East Broadcasting Network, Alhurra, MBN, OCB, Martí Noticias" />
+	<meta name="description" content="{{ page.excerpt | default: site.description_short | strip_html | normalize_whitespace | truncate: 225 | escape }}">
+	<meta name="keywords" content="China, investments, one belt one road, Broadcasting Board of Governors, BBG, RFA, RFERL, VOA, Voice of America, Radio Free Asia, Radio Free Europe / Radio Liberty, Middle East Broadcasting Network, Alhurra, MBN, OCB, Martí Noticias" />
 	<meta name="author" content="" />
 
 	<!-- for Facebook -->
@@ -22,13 +30,11 @@
 	<meta property="og:image" content="{{ site.canonical_url_base }}/img/{{ page.image | default: 'fpo__rferl.jpg' }}" />
 
 	<meta property="og:url" content="{{ page.url | replace:'index.html','' | absolute_url }}" />
-	<meta property="og:description" content="{{ page.excerpt | default: site.description_short | strip_html | normalize_whitespace | truncate: 160 | escape }}" />
-
+	<meta property="og:description" content="{{ page.excerpt | default: site.description_short | strip_html | normalize_whitespace | truncate: 225 | escape }}" />
 
 
 
 	<meta name="robots" content="noindex">
-
 
 
 
@@ -45,8 +51,6 @@
 
 
 
-
-
 	<link rel="stylesheet" type="text/css" href="{{site.canonical_url_base}}{{ "/assets/main.css" | relative_url }}">
 	<link rel="canonical" href="{{site.canonical_url_base}}{{ page.url | replace:'index.html','' | relative_url }}">
 	<link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{site.canonical_url_base}}{{ "/feed.xml" | relative_url }}">
@@ -54,11 +58,5 @@
 	{% if jekyll.environment == 'production' and site.google_analytics %}
 	{% include google-analytics.html %}
 	{% endif %}
-
-	<style type="text/css">
-			.balance-text {
-				text-wrap: balance;  /* Apply (proposed) CSS style */
-			}
-	</style>
 
 </head>
