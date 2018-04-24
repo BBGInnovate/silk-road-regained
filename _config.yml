@@ -3,12 +3,12 @@
 
 title: The Dragon's Reach | Tracking China's Belt and Road Initiative
 description: > # this means to ignore newlines
-  China is investing more than $1 trillion in roads, bridges, railways, ports, and power plants in other countries — a bold strategy to steer global commerce its way. In this project, <a href="https://www.bbg.gov/">BBG</a> news agencies examine how the 'Belt and Road Initiative' is transforming lives, reshaping landscapes and tilting the geopolitical balance.
+  China is investing more than $1 trillion in roads, bridges, railways, ports, and power plants in more than 70 countries — a bold strategy to steer global commerce its way and reclaim its Silk Road heritage. This project examines how the 'Belt and Road Initiative' is transforming lives, reshaping landscapes and tilting the geopolitical balance.
 title_short: The Dragon's Reach
 description_short: >
   China is investing more than $1 trillion in roads, bridges, railways, ports, and power plants in other countries — a bold strategy to steer global commerce its way.
 description_footer: > 
-  This project explores China's growing investments around the world. It’s a joint initiative by Radio Free Europe/Radio Liberty, Middle East Broadcasting Networks, Voice of America, Radio Free Asia and the Office of Cuba Broadcasting. They’re overseen by the Broadcasting Board of Governors.
+  <a href="http://silkroadregained.com/">“The Dragon's Reach”</a> aggregates reporting on China’s ‘Belt and Road Initiative’ from the BBG’s five independent news agencies: Voice of America, Middle East Broadcast Networks, Radio Free Europe/Radio Liberty, Radio Free Asia and The Office of Cuba Broadcasting. 
 hashtags: SilkRoadRegained
 
 
@@ -32,7 +32,7 @@ categories_list:
     url: https://www.voanews.com
     urlPretty: voanews.com
     description: >
-      Voice of America provides trusted and objective news and information in 45 languages to a measured weekly audience of more than 236.8 million people around the world.  For over 75 years, VOA journalists have told American stories and supplied content that many people cannot get locally: objective news and information about the US, their specific region and the world.
+      <a href="https://www.voanews.com/">Voice of America</a> provides trusted and objective news and information in 45 languages to a measured weekly audience of more than 236.8 million people around the world.  For over 75 years, VOA journalists have told American stories and supplied content that many people cannot get locally: objective news and information about the US, their specific region and the world.
   - name: rferl
     namePretty: RFE/RL
     nameSheet: RFERL
@@ -49,7 +49,7 @@ categories_list:
     logo: /img/logo__rfa.png
     url: https://www.rfa.org
     urlPretty: rfa.org
-    description: Radio Free Asia brings award-winning, domestic journalism and uncensored content to people in six Asian countries that restrict free speech, freedom of the press, and access to reliable information beyond their borders. RFA also provides educational and cultural programming, as well as forums for audiences to engage in open dialogue and freely express opinions.
+    description: <a href="https://www.rfa.org/">Radio Free Asia</a> brings award-winning, domestic journalism and uncensored content to people in six Asian countries that restrict free speech, freedom of the press, and access to reliable information beyond their borders. RFA also provides educational and cultural programming, as well as forums for audiences to engage in open dialogue and freely express opinions.
   - name: alhurra
     namePretty: Alhurra
     nameSheet: Alhurra

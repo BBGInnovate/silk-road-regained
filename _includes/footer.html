@@ -4,16 +4,11 @@
 <div class="bbg__grid" style="margin-bottom: 0;">
 
 <div class="bbg__grid__one-third border-right">
-<h3>About the project</h3>
-<p>{{ site.description_footer }}</p>
-</div><!--
-
---><div class="bbg__grid__one-third border-right">
 {% if page.layout == "home" or page.layout == "blank" %}
 
 <h3>About the BBG</h3>
 <a href="https://www.bbg.gov"><img src="{{ site.canonical_url_base }}/img/logo__bbg.png" class="internet-freedom__logo bbg__mugshot"></a>
-<p>The Broadcasting Board of Governors oversees five U.S. government-funded civilian broadcast networks in its mission to inform, engage and connect people around the world in support of freedom and democracy. Every week, it reaches more than 278 million listeners, viewers and internet users through those networks.</p>
+<p>The Broadcasting Board of Governors oversees five U.S. government-funded civilian news agencies in its mission to inform, engage and connect people around the world in support of freedom and democracy. The combined weekly audience exceeds 278 million.</p>
 
 {% else %}
 
@@ -26,7 +21,7 @@
 
 --><!--
 
---><div class="bbg__grid__one-third" style="margin-right: 0;">
+--><div class="bbg__grid__one-third border-right" >
 {% if page.layout == "home" or page.layout == "blank"  %}
 <h3>Recent BBG headlines</h3>
 <ul id="rssListBBG" class="bbg__rss" style="margin-top: 10px;">
@@ -36,6 +31,11 @@
 <ul id="rssList" class="bbg__rss {{ site.categories_list[currentCat].namePretty }}" style="margin-top: 10px;">
 </ul>
 {% endif %}
+</div><!--
+
+--><div class="bbg__grid__one-third" style="margin-right: 0;">
+<h3>About the project</h3>
+<p>{{ site.description_footer }}</p>
 </div>
 
 </div>
