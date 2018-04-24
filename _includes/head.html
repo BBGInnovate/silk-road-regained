@@ -24,7 +24,7 @@
 	<meta name="author" content="" />
 
 	<!-- for Facebook -->
-	<meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}" />
+	<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
 	<meta property="og:type" content="website" />
 
 	<meta property="og:image" content="{{ site.canonical_url_base }}/img/{{ page.image | default: 'fpo__rferl.jpg' }}" />
@@ -34,11 +34,21 @@
 
 
 
+	<!-- for Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@BBGgov">
+	<meta name="twitter:creator" content="@BBGgov">
+	<meta property="twitter:title" content="{% if page.title %}{{ site.title_short }} {{ page.title }}{% else %}{{ site.title }}{% endif %}">
+	<meta property="twitter:description" content="{{ page.excerpt | default: site.description_short | strip_html | normalize_whitespace | truncate: 225 | escape }}">
+	<meta property="twitter:image" content="{{ site.canonical_url_base }}/img/{{ page.image | default: 'fpo__rferl.jpg' }}">
+    <meta name="twitter:url" content="{{ page.url | replace:'index.html','' | absolute_url }}" />
+
+
+
 	<meta name="robots" content="noindex">
 
 
 
-	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Archivo+Narrow" rel="stylesheet">
 
 
@@ -52,8 +62,8 @@
 
 
 	<link rel="stylesheet" type="text/css" href="{{site.canonical_url_base}}{{ "/assets/main.css" | relative_url }}">
-	<link rel="canonical" href="{{site.canonical_url_base}}{{ page.url | replace:'index.html','' | relative_url }}">
-	<link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{site.canonical_url_base}}{{ "/feed.xml" | relative_url }}">
+	<link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | absolute_url }}">
 
 	{% if jekyll.environment == 'production' and site.google_analytics %}
 	{% include google-analytics.html %}
