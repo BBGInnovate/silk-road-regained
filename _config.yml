@@ -18,7 +18,7 @@ canonical_url_base: ""
 
 
 # ADD A WARNING FLAG 
-development_mode: true
+development_mode: false
 development_warning: This site is currently under active development.
 
 
