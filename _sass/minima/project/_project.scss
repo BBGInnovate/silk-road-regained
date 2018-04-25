@@ -410,6 +410,10 @@
 			margin-bottom: 10px;
 		}
 
+		p {
+			font-size: 14px;
+		}
+
 		@media only screen and (min-width: 640px) {
 			border-bottom: 1px dotted #CCC;
 			margin-bottom: 0;
@@ -463,252 +467,6 @@
 			}
 		}
 	}
-
-
-
-
-
-
-/*********************************/
-/*       Pano centerpiece        */
-/*********************************/
-
-	.bbg__pano__container {
-		height: 250px;
-		overflow-x: hidden;
-		position: relative;
-		width: 100%;
-	}
-
-	.bbg__pano__container .bbg__pano__image {
-		height: 250px;
-		max-width: none;
-		position: absolute;
-		width: auto;
-	}
-
-	@media only screen and (min-width: 450px) {
-		.bbg__pano__container {
-			height: 300px;
-		}
-
-		.bbg__pano__container .bbg__pano__image {
-			height: 300px;
-		}
-	}
-	@media only screen and (min-width: 640px) and (min-height: 640px) {
-		.bbg__pano__container {
-			height: 400px;
-		}
-
-		.bbg__pano__container .bbg__pano__image {
-			height: 400px;
-		}
-	}
-	@media only screen and (min-width: 1280px) and (min-height: 920px) {
-		.bbg__pano__container {
-			height: 640px;
-		}
-
-		.bbg__pano__container .bbg__pano__image {
-			height: 640px;
-		}
-	}
-
-
-
-	.bbg__deck {
-		height: auto;
-		margin-top: 20px;
-		min-height: 325px;
-		overflow-x: hidden;
-		position: relative;
-
-		@media only screen and (min-width: 320px) {
-			min-height: 300px;
-		}
-		@media only screen and (min-width: 420px) {
-			min-height: 300px;
-		}
-		@media only screen and (min-width: 640px) {
-			min-height: 275px;
-		}
-		@media only screen and (min-width: 1280px) {
-			min-height: 325px;
-		}
-
-		&.dark {
-			background-color: #333;
-			border-top: 1px solid #666;
-			box-shadow: 0 -10px 20px rgba(20,20,20,.2);
-			color: #999;
-			padding: 10px 0 0 0 !important;
-		}
-		&.light {
-			background-color: #F1F1F1;
-			border-top: 1px solid #999;
-			box-shadow: 0 -10px 20px rgba(20,20,20,.2);
-		}
-	}
-
-	.bbg__card__container {
-		position: absolute;
-		left: 100%;
-
-		&.selected {
-			//left: 50%;
-		}
-
-		.bbg__grid,
-		.bbg__grid__full {
-			margin-bottom: 0;
-			position: relative;
-		}
-
-		.bbg__card {
-			margin-top: 20px;
-
-			img {
-				@media only screen and (max-width: 640px) {
-					display: none;
-				}
-			}
-
-		}
-	}
-
-
-
-	.bbg__card {
-		img {
-			max-width: none;
-			width: 100%;
-		}
-		.bbg__label,
-		.bbg__kicker {
-			color: #999;
-			font-size: 14px;
-			margin-bottom: 5px;
-			@media only screen and (min-width: 420px) {
-				//font-size: 14px;
-			}
-			@media only screen and (min-width: 640px) {
-				font-size: 16px;
-				margin-bottom: 10px;
-			}
-		}
-		.bbg__kicker {
-			color: #FFF;
-		}
-
-		h2 {
-			color: #FFF;
-			font-size: 18px;
-			@media only screen and (min-width: 420px) {
-				font-size: 20px;
-			}
-			@media only screen and (min-width: 640px) {
-				font-size: 24px;
-			}
-			@media only screen and (min-width: 1280px) {
-				font-size: 30px;
-			}
-		}
-		p {
-			margin-top: 5px;
-			@media only screen and (min-width: 1280px) {
-				font-size: 18px;
-				line-height: 1.5;
-			}
-		}
-
-		.bbg__grid__two-thirds {
-			margin-right: 0;
-		}
-	}
-
-	.bbg__deck__counter {
-		position: absolute;
-			bottom: 30px;
-		width: 100%;
-		text-align: center;
-
-		.bbg__deck__counter__circle {
-			border: 1px solid #999;
-			border-radius: 50%;
-			cursor: pointer;
-			cursor: hand;
-			display: inline-block;
-			height: 15px;
-			width: 15px;
-			margin-right: 15px;
-			text-align: center;
-
-			&.current {
-				background-color: #999;
-				&:hover {
-					background-color: #999;
-				}
-			}
-			&:hover {
-				background-color: orange;
-			}
-
-			@media only screen and (min-width: $media__large) {
-				height: 20px;
-				width: 20px;
-			}
-
-		}
-
-
-		@media only screen and (min-width: $media__large) {
-			bottom: 30px;
-		}
-	}
-
-
-	.bbg__pano__navigation__button{
-		background-image: url(../img/icons/button__next_next.png);
-		background-position: right top;
-		background-size: 50px auto;
-		position: absolute; 
-		height: 50px;
-			top: 50%;
-		width: 50px;
-		z-index: 9998;
-
-		&.next {
-			right: 0;
-		}
-		&.previous {
-			left: 0;
-			-moz-transform: scaleX(-1);
-			-o-transform: scaleX(-1);
-			-webkit-transform: scaleX(-1);
-			transform: scaleX(-1);
-			filter: FlipH;
-			-ms-filter: "FlipH";
-    	}
-		&:hover {
-			background-position: right 100%;
-		}
-
-		@media only screen and (min-width: $media__medium) {
-			background-size: 80px auto;
-			height: 80px;
-			width: 80px;
-		}
-
-
-		@media only screen and (min-width: $media__large) {
-			background-size: 120px auto;
-			height: 120px;
-			top: 40%;
-			width: 120px;
-		}
-	}
-
 
 
 
@@ -973,14 +731,6 @@
 	}
 
 	@media only screen and (min-width: $media__large) {
-		/*.leaflet-top.leaflet-left {
-			top: 45px;
-		}*/
-		/*
-		.bbg__graphic__title--large, .bbg__section__full-width .bbg__title {
-			font-size: 5.5rem;
-		}
-		*/
 		.bbg__story .bbg__graphic__readin {
 			font-size: 22px;
 			line-height: 2;
@@ -1017,7 +767,14 @@
 				color: #000;
 				text-decoration: none;
 			}
+
+			&::hover {
+				h3 {
+					text-decoration: underline;
+				}
+			}
 		}
+
 
 		border-top: 1px solid #F1F1F1;
 		margin-bottom: 10px;
@@ -1032,15 +789,15 @@
 
 		@media only screen and (min-width: $media__small) {
 			border-top: none;
-			margin-bottom: 5px;
+			margin-bottom: 20px;
 			padding-top: 0;
 
 			img {
 				display: block;
-				float: left;
-				margin-right: 10px;
+				//float: left;
+				//margin-right: 10px;
 				margin-bottom: 5px;
-				width: 25%;
+				//width: 25%;
 			}
 		}
 		@media only screen and (min-width: $media__medium) {
@@ -1094,5 +851,71 @@
 			}
 		}
 	}
+
+
+
+	/* Category page */
+	.bbg__agency {
+		&.bbg__grid {
+			margin-bottom: 30px;
+
+			.bbg__kicker.bbg__agency {
+				margin: 20px auto 0 auto;
+			}
+
+			.bbg__agency-description {
+				background-color: #F1F1F1;
+				border-radius: 0 5px 5px 5px;
+				padding: 10px 15px; 
+
+				@media only screen and (min-width: $media__medium) {
+					padding: 15px 20px; 
+				}
+
+				p {
+					color: #333;
+					font-size: 14px;
+					//font-weight: bold;
+					line-height: 1.4;
+					margin: 0;
+					@media only screen and (min-width: $media__medium) {
+						font-size: 15px;
+						line-height: 1.5;
+					}
+				}
+			}
+		}
+	}
+
+	.bbg__featured-post{
+		.bbg__featured-post__title {
+			font-family: 'Archivo Narrow', Arial, sans-serif; 
+			font-size: 24px;
+			@media only screen and (min-width: $media__small) {
+				font-size: 30px;
+			}
+			@media only screen and (min-width: $media__medium) {
+				font-size: 36px;
+			}
+			@media only screen and (min-width: $media__large) {
+				font-size: 42px;
+			}
+		}
+		a {
+			color: #000;
+			.bbg__featured-post__title {
+
+			}
+		}
+		p {
+			font-size: 14px;
+			margin-top: 5px;
+
+			@media only screen and (min-width: $media__medium) {
+				font-size: 16px;
+			}
+		}
+	}
+
 
 }

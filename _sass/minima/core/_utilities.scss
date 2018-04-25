@@ -58,6 +58,23 @@
 		}
 	}
 
+	/*
+
+	.bbg__hide-mobile {
+		@media only screen and (max-width: $media__medium) and (max-height: 640px)  {
+			display: none;
+		}
+	}
+	.bbg__show-mobile {
+		display: block;
+		@media only screen and (min-width: $media__medium) and (min-height: 640px) {
+			display: none;
+		}
+	}
+
+
+	*/
+
 
 	@media only screen and (min-width: $media__medium-large) and (max-width: $media__large--) {
 		.bbg__no-tablet {
