@@ -1,17 +1,15 @@
 # silk-road-regained
 
-The 2018 pan-BBG project focuses on China's investments around the world under their "One belt, one road" initiative. It is a joint initiative by Radio Free Europe/Radio Liberty, Middle East Broadcasting Networks, Voice of America, Radio Free Asia and the Office of Cuba Broadcasting. They’re overseen by the Broadcasting Board of Governors.
+China is investing more than $1 trillion in roads, bridges, railways, ports, and power plants in more than 70 countries — a bold strategy to steer global commerce its way and reclaim its Silk Road heritage. This project examines how the 'Belt and Road Initiative' is transforming lives, reshaping landscapes and tilting the geopolitical balance.
+
+[“The Dragon's Reach”](http://silkroadregained.com) aggregates reporting on China’s ‘Belt and Road Initiative’ from the [Broadcasting Board of Governors’](https://www.bbg.gov) five independent news agencies: Voice of America, Middle East Broadcast Networks, Radio Free Europe/Radio Liberty, Radio Free Asia and The Office of Cuba Broadcasting. 
 
 
-### Getting started ###
+### Technical note ###
 
-Built with [Jekyll](https://jekyllrb.com/).
+This site was built using [Jekyll](https://jekyllrb.com/). Individual stories are added as new posts and written in Markdown.
 
 
-### Working with content ###
+### Contributors ###
 
-Individual stories are added as new posts and written in Markdown.
-
-The sidebars are maintained via a Google Spreadsheet, with a Node app for pulling the data down and baking it out.
-
-The faux RSS also uses a Google Spreadsheet, but is handled via client side JS (to avoid the need for baking out new HTML).
+* 
