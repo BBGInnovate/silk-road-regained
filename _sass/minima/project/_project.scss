@@ -49,6 +49,11 @@
 		    animation-duration: .2s;
 		    animation-fill-mode: forwards;
 		}
+
+		@media only screen and (max-height: $media__small) and (min-width: $media__medium) {
+			display: none;
+		}
+
 	}
 
 	@keyframes example {
@@ -71,13 +76,15 @@
 
 
 
-	/* Can probably delete this section */
-
 	.bbg__graphic__intro {
+		color: #333;
 		font-size: 16px;
 		font-weight: normal;
 		line-height: 1.4;
-		padding-bottom: 20px;
+		max-width: 80%;
+		margin: 0 auto;
+		padding: 50px 0 30px 0;
+		text-align: center;
 
 		@media only screen and (min-width: $media__medium) {
 			font-size: 18px;
@@ -86,11 +93,16 @@
 			font-size: 20px;
 			line-height: 1.5;
 		}
+
+		a {
+			text-decoration: underline;
+		}
 	}
 
 
 	.bbg__agency__container {
 		text-align: center;
+
 		@media only screen and (min-width: $media__large) {
 			margin-bottom: 20px;
 		}
@@ -857,7 +869,7 @@
 	/* Category page */
 	.bbg__agency {
 		&.bbg__grid {
-			margin-bottom: 30px;
+			margin-bottom: 20px;
 
 			.bbg__kicker.bbg__agency {
 				margin: 20px auto 0 auto;
@@ -866,9 +878,14 @@
 			.bbg__agency-description {
 				background-color: #F1F1F1;
 				border-radius: 0 5px 5px 5px;
+				display: none;
 				padding: 10px 15px; 
 
 				@media only screen and (min-width: $media__medium) {
+					display: block;
+				}
+
+				@media only screen and (min-width: $media__large) {
 					padding: 15px 20px; 
 				}
 

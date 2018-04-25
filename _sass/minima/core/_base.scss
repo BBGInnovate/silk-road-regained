@@ -27,6 +27,42 @@
 		font-family: $font__sansDisplay;
 	}
 
+	.bbg__story__centered {
+		.bbg__story{
+			p.pullquote {
+				font-family: Arial, sans-serif;
+				font-weight: bold;
+
+				@media only screen and (max-width: $media__medium--) {
+					border-top: 5px solid #333;
+					border-bottom: 1px solid #333;
+					margin-top: 40px;
+					margin-bottom: 40px;
+					padding-top: 20px;
+					padding-bottom: 20px;
+					text-align: center;
+				}
+				@media only screen and (min-width: $media__medium) {
+					float: right;
+					border-top: 5px solid #333;
+					border-bottom: 1px solid #333;
+					margin: 40px 0 40px 30px;
+					padding-top: 20px;
+					padding-bottom: 20px;
+					width: 40%;
+				}
+				@media only screen and (min-width: $media__large) {
+					float: right;
+					margin-right: -20%;
+					margin-left: 30px;
+					width: 40%;
+				}
+			}
+
+		}
+	}
+
+
 	.bbg__story{
 		p{
 			font-family: $font__serif;
@@ -56,6 +92,8 @@
 					width: 40%;
 				}
 			}
+
+
 
 			&.bbg__dateline {
 				float: left;
@@ -205,6 +243,11 @@
 			@media only screen and (min-width: $media__extra-large) and (min-height: $media__medium-large) {
 				min-height: 80%;
 			}
+
+			@media only screen and (max-height: $media__small) and (min-width: $media__medium) {
+				min-height: 100%;
+			}
+
 		}
 
 
@@ -218,38 +261,71 @@
 		.bbg__title-card {
 			position: absolute;
 				bottom: 5%;
-		}
+				left: 0; 
+			text-align: center; 
+			width: 100%;
 
-		.bbg__title {
-			//@extend .bbg__graphic__title--large;
-			color: #FFF;
-			text-shadow: 1px 1px 3px #333;
-			font-size: 36px; 
-
-			@media only screen and (min-width: $media__small) {
+			.bbg__title {
+				color: #FFF;
+				font-family: 'Montserrat', sans-serif; color: black;
+				font-size: 36px; 
+				line-height: .9;
 				margin-bottom: 10px;
-				font-size: 48px; 
+				text-transform: uppercase;
+
+				@media only screen and (min-width: $media__small) {
+					margin-bottom: 10px;
+					font-size: 48px; 
+				}
+
+				@media only screen and (min-width: $media__medium) {
+					margin-bottom: 20px;
+					font-size: 54px; 
+				}
+				@media only screen and (min-width: $media__medium-large) {
+					font-size: 66px; 
+				}
+
+				@media only screen and (max-height: $media__small) and (min-width: $media__medium) {
+					color: #FFF;
+					font-size: 36px;
+					margin-bottom: 10px;
+					margin-left: 20px;
+					text-align: left;
+					text-shadow: 1px 1px 3px rgba(20,20,20,1) !important;
+				}
+
+
 			}
 
-			@media only screen and (min-width: $media__medium) {
-				margin-bottom: 20px;
-				font-size: 54px; 
-			}
-			@media only screen and (min-width: $media__medium-large) {
-				font-size: 66px; 
-			}
+			.bbg__title__subhed {
+				color: #900;
+				font-size: 18px;
+				margin: 0 auto;
+				max-width: 80%;
+				text-transform: uppercase;
 
+				@media only screen and (min-width: $media__medium) {
+					font-size: 24px;
+				}
+
+				@media only screen and (max-height: $media__small) and (min-width: $media__medium) {
+					background-color: #333;
+					color: #CCC;
+					font-weight: normal;
+					font-size: 16px;
+					margin-left: 20px;
+					padding: 7px 7px 7px 20px;
+					text-align: left;
+					text-shadow: none !important;
+					width: auto;
+					display: table;
+					margin-left: 0;
+				}
+			}
 		}
 
-		.bbg__title__subhed {
-			font-size: 18px;
-			margin-bottom: 20px;
-			text-transform: uppercase;
 
-			@media only screen and (min-width: $media__medium) {
-				font-size: 24px;
-			}
-		}
 
 	}
 
@@ -374,10 +450,6 @@
 		.bbg__graphic__readin {
 			font-size: 140%;
 			line-height: 2;
-		}
-
-		.bbg__graphic__intro {
-			//display: none;
 		}
 
 		.bbg__section__intro {

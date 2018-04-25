@@ -13,12 +13,13 @@ description_footer: >
 hashtags: SilkRoadRegained
 
 
-# SET URL_BASE == "" FOR LOCAL DEVELOPMENT OR PROD DEPLOYMENT, OTHERWISE USE THE PREVIEW PATH WHERE IT'LL BE HOSTED.
+# EDIT FOR DEPLOYING IN A SUB FOLDER
+# (USE THE PATH WHERE IT'LL BE HOSTED)
 canonical_url_base: ""
 
 
 
-# ADD A WARNING FLAG 
+# ADD A WARNING FLAG AND DISABLE METRICS
 development_mode: false
 development_warning: This site is currently under active development.
 

@@ -13,11 +13,6 @@ layout: default
 <script src="{{ site.canonical_url_base }}/js/script-story.js"></script>
 
 
-	<style type="text/css">
-		
-	</style>
-
-
 
 <div class="category bbg__content">
 	<div class="bbg__grid__full bbg__border-sides" style="padding-top: 45px;">
@@ -26,14 +21,12 @@ layout: default
 			<h3 class="bbg__kicker bbg__agency bbg__agency--{{ site.categories_list[currentCat].name }}">{{ site.categories_list[currentCat].nameFull }}</h3>
 	
 {% unless page.content == '' %}
-			<div class="bbg__agency-description">
+			<!--<div class="bbg__agency-description">
 				<p>{{ site.categories_list[currentCat].description }}</p>
-			</div>
+			</div>-->
 {% endunless %}
 
 		</div>
-
-
 
 
 
@@ -59,27 +52,21 @@ layout: default
 
 
 
-
-
-
 		<div class="bbg__grid bbg__portfolio-grid">
 <!--
 {% assign counter = 0 %}
 {% for post in site.categories[page.category] %}
 	{% if counter >0 %}
 		 --><div class="bbg__grid__element bbg__portfolio-grid__item">
-				<!--<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>-->
 				<a class="post-link" href="{{ site.canonical_url_base }}{{ post.url | relative_url }}">
 		{% if post.thumbnail %}
-				  <img src="{{ site.canonical_url_base }}/img/{{ post.thumbnail }}" alt="{%if post.cutline%}{{ post.cutline }} {% endif %}"/>
+					<img src="{{ site.canonical_url_base }}/img/{{ post.thumbnail }}" alt="{%if post.cutline%}{{ post.cutline }} {% endif %}"/>
 		{% else %}
-				  <img src="https://placehold.it/640x360">
+					<img src="https://placehold.it/640x360">
 		{% endif %}
-				  <h3>
-					{{ post.title | escape }}
-				  </h3>
+					<h3>{{ post.title | escape }} </h3>
 				</a>
-			  </div><!--
+			</div><!--
 	{% endif %}
 	{% assign counter = counter | plus: 1 %}
 {% endfor %}
