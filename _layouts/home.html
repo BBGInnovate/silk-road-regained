@@ -40,12 +40,12 @@ layout: default
 
 	<script src="js/scripts.js"></script>
 
-		<section class="bbg__section__full-width bbg__section__title" style="/*background-image: url('img/animation-train4.gif'); background-position: left 95% center;*/">
+		<section class="bbg__section__full-width bbg__section__title">
+
 			<div class="bbg__title-card__shadow"></div>
 
-
 			<video playsinline autoplay muted loop id="videoCard" poster="img/train-poster.jpg">
-				<source src="" type="video/mp4">
+				<source type="video/mp4">
 				Your browser does not support the video tag.
 			</video>
 
@@ -69,13 +69,17 @@ layout: default
 
 		</section>
 
+		<div class="" style="background-color: #FFF; width: 100%; padding-right: 10px; position: relative; z-index: 99999;">
+			<p class="bbg__credit" style="color: #CCC; font-size: 13px; margin: 0; padding: 5px 5px 0 0;"><span class="bbg__hide-mobile">Illustration by</span> Brian Williamson | VOA</p>
+		</div>
+
 		<section class="bbg__section__full-width bbg__show-mobile" style=" box-shadow: 0 0 2px rgba(20,20,20,0); position: relative; z-index: 99999999; background-color: #FFF; ">
 
 			<div class="bbg__grid__full " style="margin: 0 auto; max-width: none; padding-top: 40px;">
 				<div class="bbg__title-card bbg__show-mobile" style="text-align: center; left: 0; width: 100%; position: relative;">
 					<div style="max-width: 1080px; margin: 0 auto;">
 						
-						<h1 class="bbg__title" style="text-transform: uppercase; margin-bottom: 10px; line-height: .9; font-family: 'Montserrat', sans-serif; color: black; text-shadow: none;">The<br/> Dragon’s Reach</h1>
+						<h1 class="bbg__title" style="text-shadow: none;">The<br/> Dragon’s Reach</h1>
 						<h2 class="bbg__title__subhed balance-text">{{ site.title_tagline | smartify}}</h2>
 					</div>
 				</div>
@@ -86,7 +90,7 @@ layout: default
 
 			<div class="bbg__grid__full" style="margin-bottom: 0;">
 				<div class="bbg__grid">
-					<h3 class="bbg__graphic__intro" style="color: #333; max-width: 80%; margin: 0 auto; padding: 50px 0 30px 0; text-align: center;">{{ site.description | smartify }}</h3>
+					<h3 class="bbg__graphic__intro"">{{ site.description | smartify }}</h3>
 				</div>
 			</div>
 		</section>

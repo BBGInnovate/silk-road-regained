@@ -1,11 +1,11 @@
 # Welcome to Jekyll!
 # Site settings
 
-title: The Dragon's Reach | Tracking China's Belt and Road Initiative
+title: The Dragon's Reach | Tracking China’s Economic Power Play
 description: > # this means to ignore newlines
   China is investing more than $1 trillion in roads, bridges, railways, ports, and power plants in more than 70 countries — a bold strategy to steer global commerce its way and reclaim its Silk Road heritage. This project examines how the 'Belt and Road Initiative' is transforming lives, reshaping landscapes and tilting the geopolitical balance.
 title_short: The Dragon's Reach
-title_tagline: Tracking China's Belt and Road Initiative
+title_tagline: Tracking China’s Economic Power Play
 description_short: >
   China is investing more than $1 trillion in roads, bridges, railways, ports, and power plants in other countries — a bold strategy to steer global commerce its way.
 description_footer: > 
@@ -85,10 +85,11 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - ai2html
+  - animation
   - sidebar-app
+  - sidebar-data-app
   - README.md
   - TECHNICAL.md
-  - animation
 sass:
   style: compressed
 
