@@ -1,0 +1,127 @@
+---
+layout: default
+---
+
+{% for cat in site.categories_list %}
+	{% if cat.name == page.categories.last %}
+		{% assign currentCat = forloop.index0 %}
+	{% endif %}
+{% endfor %}
+
+<script type="text/javascript">
+	var currentEntity = "{{ site.categories_list[currentCat].nameSheet }}";
+</script>
+<script src="{{ site.canonical_url_base }}/js/scripts.js"></script>
+
+
+<article class="post bbg__grid__full bbg__content bbg__border-sides" itemscope itemtype="http://schema.org/BlogPosting" style="margin-bottom: 0;">
+
+
+	<section class="bbg__section__full-width">
+
+		<div class="bbg__grid__full">
+
+			<div class="bbg__grid"">
+
+				<div class="bbg__grid__full" style="margin-bottom: 0; margin-top: 40px;">
+
+
+
+
+{% if page.youtube %}
+
+					<div class='embed-container'><iframe src="https://www.youtube.com/embed/{{ page.youtube }}" frameborder="0" allowfullscreen></iframe></div>
+					<div class="bbg__grid">
+						<p class="bbg__credit">{{ page.credit }}</p>
+					</div>
+
+					<div class="bbg__grid__full ">
+
+{% elsif page.image %}
+
+	{% if page.image and page.link-project %}
+						<div class="bbg__image-link-highlight-box"><a href="{{ page.link-project }}"/>
+	{% endif %}
+	
+	{% if page.image %}
+							<img src="{{ site.canonical_url_base }}/img/{{ page.image }}" alt="{{ page.alt }}" style="max-width: none; width: 100%;"/>
+	{% endif %}
+
+	{% if page.image and page.link-project %}
+							<!--<div class="bbg__image-link-highlight-box__promo"><h3>Explore the project</h3><div class="bbg__image-link-highlight-box__circle"></div></div>--></a>
+						</div>
+	{% endif %}
+	{% if page.cutline %}
+						<div class="bbg__grid__full">
+							<p class="bbg__cutline">{{ page.cutline }} ({{ page.credit }})</p>
+						</div>
+	{% elsif page.credit %}
+						<div class="bbg__grid__full">
+							<p class="bbg__credit">{{ page.credit }}</p>
+						</div>
+	{% endif %}
+
+{% endif %}
+
+					</div>
+
+
+
+
+
+					<div class="bbg__grid__full">
+
+							<div class="bbg__story__centered" style="max-width: 640px; margin: 0 auto;">
+
+								<div class="bbg__story">
+									<h2 class="bbg__featured__headline">{{ page.title | smartify }}</h2>
+{% if page.summary %}
+									<h5 style="font-size: 17px; font-weight: normal; margin-bottom: 40px">{{ page.summary | smartify }}</h5>
+{% endif %}
+
+
+{% if page.byline %}
+	{% if page.byline == "Associated Press" or page.byline == "Reuters" %}
+									<p class="bbg__byline" style="font-family: Arial, sans-serif; font-size: 14px;"> {{ page.byline }}</p>
+	{% else %}
+									<p class="bbg__byline" style="font-family: Arial, sans-serif; font-size: 14px;">By {{ page.byline }} | {{ site.categories_list[currentCat].namePretty }}</p>
+	{% endif %}
+{% endif %}
+
+
+{% if page.dateline %}
+<p class="bbg__dateline">{{ page.dateline }} • </p>
+{% endif %}
+
+									{{ content }}
+
+
+{% if page.tagline or page.link-project %}
+									<p class="bbg__tagline">
+
+	{% if page.tagline %}
+									{{ page.tagline }}
+	{% endif %}	
+
+	{% if page.link-project %}
+									This story originally appeared on <a href="{{ page.link-project }}">{{ site.categories_list[currentCat].urlPretty }}</a>.
+	{% endif %}
+
+									</p>
+{% endif %}
+
+								</div>
+
+							</div>
+
+					</div><!-- .bbg__grid__full -->
+
+				</div>
+
+			</div>
+
+	</section>
+
+</article>
+
+{% include footer.html %}

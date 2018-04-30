@@ -4,7 +4,7 @@
 <div class="bbg__grid" style="margin-bottom: 0;">
 
 <div class="bbg__grid__one-third border-right">
-{% if page.layout == "home" or page.layout == "blank" %}
+{% if page.layout == "home" or page.layout == "blank" or page.layout == "about" %}
 
 <h3>About the BBG</h3>
 <a href="https://www.bbg.gov"><img src="{{ site.canonical_url_base }}/img/logo__bbg.png" class="internet-freedom__logo bbg__mugshot"></a>
@@ -22,7 +22,7 @@
 --><!--
 
 --><div class="bbg__grid__one-third border-right" >
-{% if page.layout == "home" or page.layout == "blank"  %}
+{% if page.layout == "home" or page.layout == "blank" or page.layout == "about"  %}
 <h3>Recent BBG headlines</h3>
 <ul id="rssListBBG" class="bbg__rss" style="margin-top: 10px;">
 </ul>
