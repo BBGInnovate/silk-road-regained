@@ -935,4 +935,33 @@
 	}
 
 
+	// Sidebar
+	.bbg__table__data {
+		font-size: 14px;
+		width: 100%;
+
+		td {
+			border-top: 1px solid #F1F1F1;
+			padding: 3px 0;
+
+			&::first-child{
+				text-align: left;
+			}
+
+			&.money {
+				text-align: right;
+			}
+		}
+		th:first-child {
+			text-align: left;
+		}
+
+		tr:first-of-type {
+			td {
+				border-top: 1px solid #CCC;
+			}
+		}
+	}
+
+
 }

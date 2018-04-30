@@ -189,6 +189,7 @@
 		font-family: $font__sans;
 		font-size: 90%;
 		//font-weight: bold;
+		line-height: 1.5;
 		margin: 5px 0 20px 0;
 	}
 	p.bbg__credit {
@@ -225,6 +226,12 @@
 
 		&.white {
 			background-color: #FFF;
+		}
+
+		&.border-bottom {
+			border-bottom: 1px dotted #CCC;
+			margin-bottom: 0;
+			padding-bottom: 10px;
 		}
 
 		&.bbg__section__title {
