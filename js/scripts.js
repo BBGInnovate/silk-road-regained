@@ -135,13 +135,14 @@ $(window).on('load', function() {
 	// |  to reset the styles.         |
 	// =================================
 	//https://www.raymondcamden.com/2015/12/08/parsing-rss-feeds-in-javascript-options/
-	//var feed ="https://www.bbg.gov/category/press-release/feed/";
 
-    var rssStoryCount = 4;
+	var rssStoryCount = 4;
 
 	$(document).ready(function() {
 
-		var yql = "https://query.yahooapis.com/v1/public/yql?q=select%20title%2Clink%2Cdescription%20from%20rss%20where%20url%3D%22https%3A%2F%2Fwww.bbg.gov%2Fcategory%2Fpress-release%2Ffeed%2F%22&format=json&diagnostics=true&callback=";
+		//var yql = "https://query.yahooapis.com/v1/public/yql?q=select%20title%2Clink%2Cdescription%20from%20rss%20where%20url%3D%22https%3A%2F%2Fwww.bbg.gov%2Fcategory%2Fpress-release%2Ffeed%2F%22&format=json&diagnostics=true&callback=";
+		//var yql = "https://query.yahooapis.com/v1/public/yql?q=select%20title%2Clink%2Cdescription%20from%20rss%20where%20url%3D%22https%3A%2F%2Fwww.bbg.gov%2Fcategory%2Fthreats-to-press%2Ffeed%2F%22&format=json&diagnostics=true&callback=";
+		var yql = "https://query.yahooapis.com/v1/public/yql?q=select%20title%2Clink%2Cdescription%20from%20rss%20where%20url%3D%22https%3A%2F%2Fwww.bbg.gov%2Ftag%2Fhot-spots%2Ffeed%2F%22&format=json&diagnostics=true&callback=";
 
 		$.getJSON(yql, function(res) {
 			logger(res);
