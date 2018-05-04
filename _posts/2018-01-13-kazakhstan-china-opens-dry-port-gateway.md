@@ -7,6 +7,8 @@ image: rferl__kazakhstan-china-opens-dry-port-gateway.jpg
 thumbnail: rferl__kazakhstan-china-opens-dry-port-gateway--640x360.jpg
 youtube: zsmoAHFcEag
 country: Kazakhstan
+byline: Ray Furlong and Roman Kupka | Current Time
+tagline: Current Time TV is the Russian-language network run by RFE/RL in cooperation with VOA.
 link-project:  "https://www.rferl.org/a/kazakhstan-new-silk-road-china-exports-gamble/28970736.html"
 ---
 
