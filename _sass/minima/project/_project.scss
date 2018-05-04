@@ -103,11 +103,23 @@
 	.bbg__agency__container {
 		text-align: center;
 
+		&.homepage {
+			margin-top: -1px;
+
+			.bbg__kicker,
+			.bbg__graphic__kicker {
+
+				&.bbg__agency {
+					border-radius: 0 0 2px 2px;
+				}
+			}
+
+		}
+
 		@media only screen and (min-width: $media__large) {
 			margin-bottom: 20px;
 		}
 	}
-
 
 	.bbg__story__byline {
 		color: #999; 
@@ -852,7 +864,6 @@
 			}
 		}
 		@media only screen and (min-width: $media__medium) {
-			margin-bottom: 15px;
 			img {
 				float: none;
 				margin-right: 0;
@@ -861,6 +872,8 @@
 		}
 
 		@media only screen and (min-width: $media__large) {
+			margin-bottom: 30px;
+
 			h3 {
 				font-size: 16px;
 			}
