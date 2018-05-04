@@ -1,0 +1,53 @@
+{
+"Loans" : {
+"namePretty" : "Loans",
+"headline" : "Chinese Loans to country",
+"description" : "In millions of US dollars (2000 - 2015) — unadjusted",
+"sectorHeadline" : "Loans received by sector",
+"sectorDescription" : "Ranked according to total received (2000 - 2015)",
+"scale" : 1000000,
+"scaleLabel" : "Millions ($US)",
+"prefix" : "$",
+"suffix" : ""
+},
+"Labor" : {
+"namePretty" : "Labor",
+"description" : "Includes both contracted projects and labor services",
+"headline" : "Chinese workers in Africa by the end of year (2009 - 2016)",
+"scale" : 1,
+"scaleLabel" : "Chinese workers",
+"prefix" : "",
+"suffix" : " workers"
+},
+"Contracts" : {
+"namePretty" : "Contracts",
+"headline" : "Gross Annual Revenues of Chinese Companies' Construction Projects in Africa",
+"description" : "In millions of US dollars (1998 - 2016)",
+"scale" : 1,
+"scaleLabel" : "Millions ($US)",
+"prefix" : "$",
+"suffix" : ""
+},
+"CN_EXtoAfr" : {
+"namePretty" : "Chinese exports",
+"headline" : "Chinese exports to country",
+"description" : "Goods imported from China  (1992 - 2016)",
+"scale" : 1,
+"scaleLabel" : "Millions ($US)",
+"prefix" : "$",
+"suffix" : "",
+"source" : "UNComtrade data from 1992-2016, http://comtrade.un.org/data/",
+"note" : "All figures are as reported by China."
+},
+"CN_IMfromAfr" : {
+"namePretty" : "Chinese imports from country",
+"headline" : "Imports from country",
+"description" : "Goods exported to China  (1992 - 2016)",
+"scale" : 1,
+"scaleLabel" : "Millions ($US)",
+"prefix" : "$",
+"suffix" : "",
+"source" : "UNComtrade data from 1992-2016, http://comtrade.un.org/data/",
+"note" : "All figures are as reported by China."
+}
+}

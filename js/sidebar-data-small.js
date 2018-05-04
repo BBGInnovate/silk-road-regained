@@ -11,7 +11,7 @@ var myGraphic;
 var yscale;
 var axisBuilt = false;
 
-var margin = {top: 20, right: 0, bottom: 20, left: 50};
+var margin = {top: 20, right: 0, bottom: 20, left: 60};
 var heightGraphic = 300 - margin.top - margin.bottom;
 var widthGraphic;
 var widthGraphicOld = -1;
