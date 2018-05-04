@@ -10,9 +10,18 @@ layout: default
 
 <script type="text/javascript">
 	var currentEntity = "{{ site.categories_list[currentCat].nameSheet }}";
+{% if page.includeTweets %}
+	var includeTweets = true;
+{% else %}
+	var includeTweets = false;
+{% endif %}
+
 </script>
 <script src="{{ site.canonical_url_base }}/js/script-story.js"></script>
 
+{% if page.includeTweets %}
+<script sync src="https://platform.twitter.com/widgets.js"></script>
+{% endif %}
 
 <article class="post bbg__grid__full bbg__content bbg__border-sides" itemscope itemtype="http://schema.org/BlogPosting" style="margin-bottom: 0;">
 
@@ -105,9 +114,8 @@ layout: default
 	{% endif %}	
 
 	{% if page.link-project %}
-									This story originally appeared on <a href="{{ page.link-project }}">{{ site.categories_list[currentCat].urlPretty }}</a>.
+									This story originally appeared on <a href="{{ page.link-project }}">{{ site.categories_list[currentCat].urlPretty }}</a>. ({{ page.date | date: '%B %-d, %Y' }})
 	{% endif %}
-
 									</p>
 {% endif %}
 

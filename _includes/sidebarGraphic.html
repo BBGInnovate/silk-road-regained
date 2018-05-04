@@ -1,0 +1,113 @@
+
+<style type="text/css">
+		.mySVG {
+			width: 100%;
+			display: block;
+		}
+		.mySVG #yAxis path.domain {
+			stroke: #CCC;
+		}
+		.mySVG #yAxis .tick line {
+			stroke: #CCC;
+		}
+		.textLabelValue {
+			font-size: 13px;
+		}
+
+		.textLabelYear {
+			display: none;
+	}
+		.textLabelXAxis {
+			display: block;
+		}
+
+		.textLabelXAxis,
+		.textLabelYAxis {
+			font-size: 12px;
+			font-weight: bold;
+		}
+
+		.textLabelYAxis {
+			font-weight: bold;
+		}
+		@media only screen and (min-width: 420px) {
+			.textLabelYear {
+				display: block;
+				font-size: 12px;
+			}
+			.textLabelXAxis {
+				display: none;
+			}
+		}
+		@media only screen and (min-width: 640px) {
+			.textLabelYear {
+				display: none;
+			}
+			.textLabelXAxis {
+				display: block;
+			}
+		}
+
+
+		div.tooltip {
+			background: #FFF;
+			border: 0px;
+			border-radius: 2px;
+			box-shadow: 1px 1px 2px rgba(20,20,20,.4);
+			font: 12px sans-serif;
+			height: 24px;
+			padding: 2px;
+			pointer-events: none;
+			position: absolute;	
+			text-align: center;
+			width: 90px;	
+			z-index: 9999999;
+		}
+
+</style>
+
+<script type="text/javascript">
+{% assign countryData = 'Data' | append: page.country %}
+var countryData = {{ site.data[countryData] | jsonify }};
+var scale = {{ site.data.cariDefinitions[ page.graphicVariable ].scale }};
+var prefix = "{{ site.data.cariDefinitions[ page.graphicVariable ].prefix }}";
+var suffix = "{{ site.data.cariDefinitions[ page.graphicVariable ].suffix }}";
+var scaleLabel = "{{ site.data.cariDefinitions[ page.graphicVariable ].scaleLabel }}";
+</script>
+
+<div class="bbg__infobox" style="color: #888;">
+	<div class="bbg__grid__full" style="margin-bottom: 0;">
+		<img src="{{ site.canonical_url_base }}/img/staticmap__{{ page.country|downcase }}.jpg" style="width: 100%; margin-bottom: 40px; max-width: none;" alt="FPO {{ page.country }} static map">
+
+
+		<div class="bbg__grid__full">
+
+{% if page.graphicTitle %}
+			<h4 id="graphicHeadline">{{ page.graphicTitle }}</h4>
+{% else %}
+			<h4 id="graphicHeadline">{{ site.data.cariDefinitions[ page.graphicVariable ].headline | replace: 'country', page.country }}</h4>
+{% endif %}
+
+{% if page.graphicChatter %}
+			<p style="margin-top: 5px; font-size: 14px;">{{ page.graphicChatter }}</p>
+{% else %}
+			<p style="margin-top: 5px; font-size: 14px;">{{ site.data.cariDefinitions[ page.graphicVariable ].description | replace: 'country', page.country }}</p>
+{% endif %}
+
+
+			<div id="graphic" class="bbg__grid__full"></div>
+
+		</div>
+
+		<div class="bbg__grid__full">
+			<h4 id="graphicHeadline">{{ site.data.cariDefinitions[ page.graphicVariable ].sectorHeadline | replace: 'country', page.country }}</h4>
+			<p id="graphicDescription" style="margin-top: 5px; font-size: 14px;">{{ site.data.cariDefinitions[ page.graphicVariable ].sectorDescription | replace: 'country', page.country }}</p>
+			<div id="sectorRanking" style="margin-top: 5px; font-size: 14px;"></div>
+		</div>
+
+		<div class="bbg__grid__full">
+			<p class="bbg__credit" style="font-size: 13px; margin-top: 20px; text-align: left;">Source: China Africa Research Initiative (<a href="http://www.sais-cari.org/data/">CARI</a>)</p>
+		</div>
+
+	</div>
+</div>

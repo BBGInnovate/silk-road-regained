@@ -10,8 +10,34 @@ layout: default
 
 <script type="text/javascript">
 	var currentEntity = "{{ site.categories_list[currentCat].nameSheet }}";
+{% if page.includeTweets %}
+	var includeTweets = true;
+{% else %}
+	var includeTweets = false;
+{% endif %}
 </script>
-<script src="{{ site.canonical_url_base }}/js/script-story.js"></script>
+
+{% if page.includeSidebar == "sidebarGraphic.html" %}
+
+	<script type="text/javascript">
+		var defaultCountry = "{{ page.country }}";
+		var defaultMetric = "{{ page.graphicVariable | default: 'Loans' }}";
+		var urlDataPrefix ="{{ site.canonical_url_base }}";
+	</script>
+
+	<script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+	<script src="{{ site.canonical_url_base }}/js/sidebar-data-small.js"></script>
+
+{% else %}
+
+	<script src="{{ site.canonical_url_base }}/js/script-story.js"></script>
+
+{% endif %}
+
+{% if page.includeTweets %}
+	<script sync src="https://platform.twitter.com/widgets.js"></script>
+{% endif %}
+
 
 
 <article class="post bbg__grid__full bbg__content bbg__border-sides" itemscope itemtype="http://schema.org/BlogPosting" style="margin-bottom: 0;">
@@ -82,8 +108,13 @@ layout: default
 
 
 {% if page.byline %}
+	{% if page.byline == "Associated Press" or page.byline == "Reuters" %}
+									<p class="bbg__byline" style="font-family: Arial, sans-serif; font-size: 14px;"> {{ page.byline }}</p>
+	{% else %}
 									<p class="bbg__byline" style="font-family: Arial, sans-serif; font-size: 14px;">By {{ page.byline }} | {{ site.categories_list[currentCat].namePretty }}</p>
-									{% endif %}
+	{% endif %}
+{% endif %}
+
 
 {% if page.dateline %}
 <p class="bbg__dateline" style="">{{ page.dateline }} • </p>
@@ -100,7 +131,7 @@ layout: default
 	{% endif %}	
 
 	{% if page.link-project %}
-									This story originally appeared on <a href="{{ page.link-project }}">{{ site.categories_list[currentCat].urlPretty }}</a>.
+									This story originally appeared on <a href="{{ page.link-project }}">{{ site.categories_list[currentCat].urlPretty }}</a>. ({{ page.date | date: '%B %-d, %Y' }})
 	{% endif %}
 
 									</p>
@@ -117,6 +148,7 @@ layout: default
 	{% include sidebar.html %}
 {% endif %}
 
+
 						</div>
 
 					</div><!-- .bbg__grid__full -->
@@ -126,11 +158,6 @@ layout: default
 			</div>
 
 	</section>
-
-
-{% if site.disqus.shortname %}
-	{% include disqus_comments.html %}
-{% endif %}
 
 </article>
 

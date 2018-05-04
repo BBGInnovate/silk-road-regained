@@ -9,6 +9,7 @@ layout: default
 
 <script type="text/javascript">
 	var currentEntity = "{{ site.categories_list[currentCat].nameSheet }}";
+	var includeTweets = false;
 </script>
 <script src="{{ site.canonical_url_base }}/js/script-story.js"></script>
 
@@ -21,9 +22,9 @@ layout: default
 			<h3 class="bbg__kicker bbg__agency bbg__agency--{{ site.categories_list[currentCat].name }}">{{ site.categories_list[currentCat].nameFull }}</h3>
 	
 {% unless page.content == '' %}
-			<!--<div class="bbg__agency-description">
+			<div class="bbg__agency-description">
 				<p>{{ site.categories_list[currentCat].description }}</p>
-			</div>-->
+			</div>
 {% endunless %}
 
 		</div>

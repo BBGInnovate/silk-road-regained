@@ -1,29 +1,5 @@
 <div class="voa__infobox" style="color: #888;">
 	<div class="voa__grid__full" style="margin-bottom: 0;">
 			<img src="{{ site.canonical_url_base }}/img/staticmap__{{ page.country|downcase }}.jpg" style="width: 100%; max-width: none;" alt="FPO {{ page.country }} static map">
-{% comment %}
-			<!--
-			<h3 class="voa__label" style="font-size: 14px;">{{ site.data[page.country][0].country }}</h3>
-			<p style="font-size: 14px; ">{{ site.data[page.country][0].description }}</p>
-			<h3 class="voa__label" style="font-size: 14px;">&nbsp;</h3>
-
-			<p>
-			{{ site.data[page.country][0].description | newline_to_br }}
-			</p>
-
-			<h4>By the numbers</h4>
-			<ul style="font-size: 14px;">
-				<li style="font-size: 14px;">POPULATION: {{ site.data[page.country][0].population }}</li>
-				<li style="font-size: 14px;">MONEY: ${{ site.data[page.country][0].money }}</li>
-				<li style="font-size: 14px;">DISTANCE: {{ site.data[page.country][0].distance }}</li>
-
-			</ul>
-			-->
-
-	<!-- trying to loop through possible column names -->
-	{% for item in site.data[page.country][0] %}
-			<p> {{ item[0] }}: {{ site.data[page.country][0][ item[0] ] }}</p>
-	{% endfor %}
-{% endcomment %}
 	</div>
 </div>
