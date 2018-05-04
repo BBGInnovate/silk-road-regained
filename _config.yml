@@ -31,6 +31,7 @@ categories_list:
     nameSheet: VOA
     nameFull: Voice of America
     logo: /img/logo__voa.png
+    twitter: VOAnews
     url: https://www.voanews.com
     urlPretty: voanews.com
     description: >
@@ -40,6 +41,7 @@ categories_list:
     nameSheet: RFERL
     nameFull: Radio Free Europe / Radio Liberty
     logo: /img/logo__rferl.png
+    twitter: RFERL
     url: https://www.rferl.org/
     urlPretty: rferl.org
     description: >
@@ -49,6 +51,7 @@ categories_list:
     nameSheet: RFA
     nameFull: Radio Free Asia
     logo: /img/logo__rfa.png
+    twitter: RadioFreeAsia
     url: https://www.rfa.org
     urlPretty: rfa.org
     description: <a href="https://www.rfa.org/">Radio Free Asia</a> brings award-winning, domestic journalism and uncensored content to people in six Asian countries that restrict free speech, freedom of the press, and access to reliable information beyond their borders. RFA also provides educational and cultural programming, as well as forums for audiences to engage in open dialogue and freely express opinions.
@@ -57,14 +60,16 @@ categories_list:
     nameSheet: Alhurra
     nameFull: Alhurra
     logo: /img/logo__mbn.png
+    twitter: AlhurraNews
     url: https://www.alhurra.com
     urlPretty: alhurra.com
-    description: Middle East Broadcasting Networks is the non-profit news organization that operates Alhurra Television, Radio Sawa and MBN Digital reaching audiences in 22 countries across the Middle East and North Africa.
+    description: Middle East Broadcasting Networks is the non-profit news organization that operates <a href="https://www.alhurra.com/">Alhurra Television</a>, <a href="https://www.radiosawa.com/">Radio Sawa</a> and MBN Digital reaching audiences in 22 countries across the Middle East and North Africa.
   - name: martí
     namePretty: Martí Noticias
     nameSheet: Martí
     nameFull: Martí Noticias
     logo: /img/logo__ocb.png
+    twitter: martinoticias
     url: https://www.martinoticias.com
     urlPretty: martinoticias.com
     description: >

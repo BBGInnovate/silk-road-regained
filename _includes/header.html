@@ -1,5 +1,12 @@
 <header class="site-header" role="banner">
 
+{% for cat in site.categories_list %}
+	{% if cat.name == page.categories.last %}
+		{% assign currentCat = forloop.index0 %}
+	{% endif %}
+{% endfor %}
+
+
 		<div class="bbg__navbar white" style="z-index: 99999;">
 			<div class="bbg__grid__full">
 				<div class="bbg__grid">
@@ -44,7 +51,7 @@
 
 
 
-							<li><a id="shareTwitter" title="Share on Twitter" class="social-share-link twitter" href="https://twitter.com/intent/tweet?text={{ site.description_short | url_encode}}&amp;url={{ page.url | replace:'index.html','' | replace:'.html','' | absolute_url | url_encode}}&amp;via=BBGgov&amp;hashtags={{ site.hashtags | url_encode}}"><div class="social-icon"></div><span class="social-share-text">Share on Twitter</span></a></li>
+							<li><a id="shareTwitter" title="Share on Twitter" class="social-share-link twitter" href="https://twitter.com/intent/tweet?text={{ site.description_short | url_encode}}&amp;url={{ page.url | replace:'index.html','' | replace:'.html','' | absolute_url | url_encode}}&amp;via={{ site.categories_list[currentCat].twitter | default: "BBGgov" }}&amp;hashtags={{ site.hashtags | url_encode}}"><div class="social-icon"></div><span class="social-share-text">Share on Twitter</span></a></li>
 
 							<li><a id="shareFacebook" title="Share on Facebook" class="social-share-link facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | replace:'index.html','' | replace:'.html','' | absolute_url | url_encode}}"><div class="social-icon"></div><span class="social-share-text">Share on Facebook</span></a></li>
 						</ul>
@@ -54,4 +61,3 @@
 		</div>
 
 </header>
-
