@@ -1,5 +1,9 @@
 // Put project-specific CSS here.
 
+body.noScroll{
+	overflow: hidden;
+}
+
 
 .bbg__project {
 
@@ -1016,6 +1020,49 @@
 			td {
 				border-top: 1px solid #CCC;
 			}
+		}
+	}
+
+
+
+
+	.bbg__modal__background {
+		background-color: rgba(20,20,20,.8);
+		display: none;
+		height: 100%;
+		position: fixed;
+			top: 0;
+		width: 100%;
+		z-index: 999998;
+
+		.bbg__modal__popup {
+			background-color: #FFF;
+			border-radius: 5px;
+			margin: 50px auto;
+			max-width: 800px;
+
+			padding: 20px;
+
+			img {
+				max-width: none;
+				width: 100%;
+			}
+		}
+	}
+
+	.bbg__modal__button {
+		display: none;
+		width: 40px;
+		position: fixed;
+			top: 49%;
+		z-index: 99999999;
+
+		&.show {
+			display: block;
+		}
+
+		img {
+			border-radius: 50%;
 		}
 	}
 

@@ -2,7 +2,8 @@
 var public_spreadsheet_url = '1YWA_xgglptdYQEyUQsro9j05004gTibHTqkItY0lEYw';
 //var map; //defined here for global access.
 var entities = ["Alhurra", "Martí", "RFA", "RFERL", "VOA"];//"mbn", "rferl", "rfa", 
-
+var currentSlideNumber = 0;
+var captionHeight = 10;
 
 var debugMode = true;
 // Basic function to replace console.log() statements so they can all be disabled as needed;
@@ -15,47 +16,24 @@ function logger(logString){
 
 
 
-
-
-
-
 // ============================
 // |  Basic tabletopJS setup  |
 // ============================
 function loadSpreadsheet() {
-	if ( mode == "editing") {
-		//multisheet version: 
-		Tabletop.init( { key: public_spreadsheet_url,
-		 	callback: showInfo,
-		 	wanted: entities } )
-	} else if ( mode == "production") {
-		//buildPresidents(d3target);
-		showInfo(bakedData);
-	} else {
-		console.log("You need to define the 'mode' ('editing' or 'production')");
-	}
+	Tabletop.init( { key: public_spreadsheet_url,
+	 	callback: showInfo,
+	 	wanted: entities } )
 }
 //function showInfo(data, tabletop) {
 function showInfo(data) {
 	logger("loaded spreadsheet data: ");
 	logger(data);
 
-	/*
-	var promo = "<h3 class='voa__label' style='font-size: 14px;'>More from " + currentEntity + "</h3>";
-	promo += "<a href='" + data[currentEntity].elements[0].link + "'>"
-	if (data[currentEntity].elements[0].thumbnail != ""){
-		promo += "<img src='" + data[currentEntity].elements[0].thumbnail + "'/>"
-	}
-	promo += "<h4>" + data[currentEntity].elements[0].headline + "</h4>"
-	promo += "</a>"
-
-	$("#storyPromo").html(promo)
-	*/
-
 	var rss = "";
 
 	if(currentEntity != "Alhurra"){
 		var RSSnumberOfStories = 3;
+
 		for (var i = 0; i < data[currentEntity].elements.length; i++){
 			if (i < RSSnumberOfStories + 1){
 				rss += '<li><a href="' + data[currentEntity].elements[i].link + '">' + data[currentEntity].elements[i].headline + '</a></li>';
@@ -135,30 +113,6 @@ $(document).ready(function(){
 
 
 	/*
-	//=====================================================
-	// |  Add support for query strings (for languages)   |
-	//=====================================================
-	function getParameterByName(name, url) {
-		if (!url) url = window.location.href;
-		name = name.replace(/[\[\]]/g, "\\$&");
-		var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-		    results = regex.exec(url);
-		if (!results) return null;
-		if (!results[2]) return '';
-		return decodeURIComponent(results[2].replace(/\+/g, " "));
-	}
-
-	// you'll need to use this after the document has loaded.
-	languageQuery = getParameterByName('language');
-	if (languageQuery && languageQuery!=""){
-		language = languageQuery;
-	}
-
-	*/
-
-
-
-	/*
 	// ================================================
 	// |  Opens a pop-up with twitter sharing dialog  |
 	// ================================================
@@ -201,4 +155,72 @@ $(document).ready(function(){
 	if (includeTweets){
 		showTweet();
 	}
+
+
+
+	// =================================
+	// |  load slides in modal window  |
+	// =================================
+
+
+	var totalPhotos = $(".bbg__load-photo").length - 1;
+
+	$(".bbg__load-photo").click(function(){
+		currentSlideNumber = $(this).data("slide");
+
+		displayPhoto();
+
+		$('body').addClass("noScroll");
+
+		$("#modalContainer").fadeIn( "slow", function() {
+			//alert("clicked: " + headline);
+		  });
+
+		$(".bbg__modal__button").addClass("show");
+	})
+
+	$("#nextButton").click(function(){
+		if (currentSlideNumber < totalPhotos){
+			currentSlideNumber ++;
+		} else {
+			currentSlideNumber = 0;
+		}
+		displayPhoto();
+	})
+	$("#previousButton").click(function(){
+		if (currentSlideNumber > 0){
+			currentSlideNumber --;
+		} else {
+			currentSlideNumber = totalPhotos;
+		}
+		displayPhoto();
+	})
+
+	function displayPhoto(){
+		var currentSlide = "#slide"+currentSlideNumber + " img";
+		var caption = $(currentSlide).data("caption");
+		var photoUrl = $(currentSlide).data("url");
+
+		$("#photoCutline").text(caption);
+		$("#modalPhoto").attr("src", photoUrl)
+
+		captionHeight = $("#photoCutline").height();
+		var modalHeight = $(window).height() * .9;
+
+		$(".bbg__modal__popup").css('max-height', modalHeight);
+		captionHeight = $("#photoCutline").height();
+
+		$("#photoContainer").css('max-height', modalHeight - captionHeight - 40);
+	}
+
+	$("#modalContainer").click(function(){
+		$("#modalContainer").fadeOut( "slow", function() {
+			$("#modalPhoto").attr("src", "")
+			$('body').removeClass("noScroll");
+			$(".bbg__modal__button").removeClass("show");
+
+		});
+	})
+
+
 });

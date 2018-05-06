@@ -39,6 +39,29 @@ layout: default
 {% endif %}
 
 
+<div id="previousButton" class="bbg__modal__button previous" style="left: 5px;"><img src="{{ site.canonical_url_base }}/img/icons/icons__previous.jpg" /></div>
+<div id="nextButton" class="bbg__modal__button next" style="right: 5px;"><img src="{{ site.canonical_url_base }}/img/icons/icons__next.jpg" /></div>
+
+
+<div id="modalContainer" class="bbg__modal__background" style="">
+
+
+	<div class="bbg__grid__full">
+
+		<div class="bbg__grid">
+			<div id="modal" class="bbg__modal__popup" style="">
+
+				<div id="photoContainer" class="photo-container" style="margin-bottom: 3px; overflow-y: hidden;"><img id="modalPhoto" src=""/></div>
+				<p id="photoCutline" class="bbg__cutline" style="margin: 0;"></p>
+
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+
 
 <article class="post bbg__grid__full bbg__content bbg__border-sides" itemscope itemtype="http://schema.org/BlogPosting" style="margin-bottom: 0;">
 
