@@ -90,16 +90,14 @@ $(window).on('load', function() {
 
 
 
-	/*
 	// ================================================
 	// |  Opens a pop-up with twitter sharing dialog  |
 	// ================================================
 	$('#shareTwitter').click(function(){
-		var url = shareUrl;
-		var text = shareText;
-		window.open('http://twitter.com/share?url='+encodeURIComponent(url)+'&text='+encodeURIComponent(text), '', 'left=0,top=0,width=550,height=450,personalbar=0,toolbar=0,scrollbars=0,resizable=0');
+		var url = $(this).attr("href");
+		window.open(url, '', 'left=0,top=0,width=550,height=450,personalbar=0,toolbar=0,scrollbars=0,resizable=0');
+		return false;
 	})
-	*/
 
 		
 		/*

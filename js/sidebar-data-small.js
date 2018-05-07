@@ -355,50 +355,6 @@ $(document).ready(function(){
 	    .style("opacity", 0);
 
 
-	/*
-
-	//If you want to load the JSON client side do this:
-	$.getJSON( urlDataPrefix + "/data/data_profile_" + countryNameCondensed + ".json", function( data ) {
-		logger("Loaded data for " + defaultCountry);
-		logger("/data/data_profile_" + countryNameCondensed + ".json\n\n")
-
-		data__CARI = data;
-		logger(data__CARI);
-
-		logger("\n\nAttempting to create graphic")
-		createGraphic("graphic")
-
-
-		//
-		console.log("\n\nSorting the sectors")
-		var sortedSectors=sortProperties(data__CARI.Loans.sector);
-		console.log(sortedSectors);
-
-
-		var formatComma = d3.format(",");
-
-		//var sortedSectorsString = '<ul class="" style="padding-left: 0; list-style: none;">';
-		var sortedSectorsString = '<table class="bbg__table__data">';
-		sortedSectorsString += '<thead><tr><th>Sector</th><th>Money</th></tr></thead>';
-		sortedSectorsString += '<tbody>';
-		for (var i = sortedSectors.length - 1; i >= 0; i--) {
-			if (sortedSectors[i][1] > 0){
-				//console.log(sortedSectors[i][0] + ": " + sortedSectors[i][1]);
-
-				var loanValueNumberFull = sortedSectors[i][1] * 1000000;
-				loanValueNumberFull = formatComma(loanValueNumberFull);
-				//console.log("$"+ loanValueNumberFull);
-
-				//sortedSectorsString += "<li>" + sortedSectors[i][0] + ": $" + sortedSectors[i][1] + "</li>";
-				sortedSectorsString += "<tr><td>" + sortedSectors[i][0] + "</td><td class='money'>$" + loanValueNumberFull + "</td></tr>";
-			}
-		}
-		//sortedSectorsString += '</ul>';
-		sortedSectorsString += '</tbody></table>'
-
-		$("#sectorRanking").html(sortedSectorsString);
-	});
-	*/
 
 	// If you've baked the country JSON into the project
 		data__CARI = countryData;
@@ -425,6 +381,18 @@ $(document).ready(function(){
 	}
 	sortedSectorsString += '</tbody></table>';
 	$("#sectorRanking").html(sortedSectorsString);
+
+
+
+
+	// ================================================
+	// |  Opens a pop-up with twitter sharing dialog  |
+	// ================================================
+	$('#shareTwitter').click(function(){
+		var url = $(this).attr("href");
+		window.open(url, '', 'left=0,top=0,width=550,height=450,personalbar=0,toolbar=0,scrollbars=0,resizable=0');
+		return false;
+	})
 
 
 
