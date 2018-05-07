@@ -1041,11 +1041,30 @@ body.noScroll{
 			margin: 50px auto;
 			max-width: 800px;
 
-			padding: 20px;
+			padding: 4px 20px 20px 20px;
 
 			img {
 				max-width: none;
 				width: 100%;
+			}
+
+			.bbg__modal__close-button {
+				color: #CCC;
+				cursor: pointer;
+				float: right;
+				font-size: 11px;
+				margin: 0 0 2px 0;
+				z-index: 99999999;
+				&:hover {
+					color: #900 !important;
+				}
+			}
+
+			&:hover {
+				.bbg__modal__close-button {
+					color: #999;
+					text-decoration: underline;
+				}
 			}
 		}
 	}
