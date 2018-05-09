@@ -1105,5 +1105,19 @@ body.noScroll{
 		}
 	}
 
+	.bbg__featured-image__shadow {
+		@media only screen and (min-width: $media__medium) {
+			height: 100%;
+			position: absolute;
+				top: 0;
+			width: 100%;
+			z-index: 9999;
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+51&0.4+0,0+46 */
+			background: -moz-linear-gradient(45deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 46%, rgba(0,0,0,0) 51%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(45deg, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0) 46%,rgba(0,0,0,0) 51%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(45deg, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0) 46%,rgba(0,0,0,0) 51%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+		}
+	}
 
 }
