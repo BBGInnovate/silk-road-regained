@@ -2,7 +2,7 @@
 layout: post
 title:  "Zimbabwe’s Leader Thanks China’s Xi, Pledges to Boost Ties"
 date:   2018-03-14
-categories: voa
+categories: ap
 image: voa__zimbabwes-leader-thanks-chinas-xi-pledges-to-boost-ties.jpg
 thumbnail: voa__zimbabwes-leader-thanks-chinas-xi-pledges-to-boost-ties--640x360.jpg
 byline: Associated Press
