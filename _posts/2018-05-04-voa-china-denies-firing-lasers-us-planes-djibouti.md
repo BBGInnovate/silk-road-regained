@@ -51,6 +51,13 @@ Joshua Meservey, a senior policy analyst for Africa and the Middle East at The H
 
 “I think it’s probably just somewhat of a standard operating procedure, unfortunately, for the Chinese where they, if they see an opportunity to harass, or maybe they’re trying out — it could well be that they’re experimenting with lasers as a way of disrupting flights and they thought that the U.S. military flights in Djibouti were great guinea pigs,” Meservey said.
 
+
+
+{:.pullquote}
+“They have a very strong long-term strategy that they are following, and both that military diplomacy and the economic investments are key pillars of how they actually establish their presence in that region.”
+
+
+
 Chinese military analysts who spoke to the South China Morning Post, a news organization based in Hong Kong, said the lasers may have been intended to disperse birds or intercept reconnaissance drones.
 
 China has signed the Protocol on Blinding Laser Weapons, which bans the use of lasers that cause blindness in warfare. It specifically allows for other applications, however, including “blinding as an incidental or collateral effect of the legitimate military employment of laser systems.”
