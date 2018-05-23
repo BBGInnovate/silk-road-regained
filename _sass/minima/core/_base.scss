@@ -233,6 +233,10 @@
 			padding-bottom: 10px;
 		}
 
+		&.shadow-top {
+			box-shadow: 0 -10px 20px rgba(20,20,20,.1);
+		}
+
 		&.bbg__section__title {
 			background-color: #F1F1F1;
 			background-position: center;// center 20%;
