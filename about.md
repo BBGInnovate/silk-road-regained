@@ -22,7 +22,7 @@ exclude_from_nav: true
 
 <div class="bbg__QA">
 	<h4>What's the cost?</h4>
-	<p>An oft-cited number is $1 trillion in loans and investments from China, by some estimates go as high as $8 trillion over time. Skeptics say China might not be able not be able to afford it all.</p>
+	<p>An oft-cited number is $1 trillion in loans and investments from China, but some estimates go as high as $8 trillion over time. Skeptics say China might not be able  to afford it all.</p>
 </div>
 
 <div class="bbg__QA">
@@ -37,7 +37,7 @@ exclude_from_nav: true
 
 <div class="bbg__QA">
 	<h4>What about Africa?</h4>
-	<p>China's investments in Africa predates Belt and Road by more than a decade. A report last year by McKinsey&Company said up to 10,000 Chinese firms have created jobs for "several million" Africans, some trained to run Chinese-built railways. China is Africa's No. 1 trade partner.</p>
+	<p>China's investments in Africa predate Belt and Road by more than a decade. A report last year by McKinsey & Company said up to 10,000 Chinese firms have created jobs for "several million" Africans, some trained to run Chinese-built railways. China is Africa's No. 1 trade partner.</p>
 </div>
 
 <div class="bbg__QA">
