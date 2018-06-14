@@ -42,7 +42,7 @@ exclude_from_nav: true
 
 <div class="bbg__QA">
 	<h4>Can countries afford it?</h4>
-	<p>There are some worries. Chinese-backed loans fund many projects. Some are low-cost; others have commercial rates. The Center for Global Development projected that some countries are at risk of taking on too much China debt. Unable to pay back an $8 billion construction loan, Sri Lanka gave China a 99-year lease to control strategic Hambantota port.</p>
+	<p>There are some worries. Chinese-backed loans fund many projects. Some are low-cost; others have commercial rates. The Center for Global Development projected that some countries are at risk of taking on too much China debt. Unable to pay back a series of construction loans totalling $8 billion, Sri Lanka gave China a 99-year lease to control strategic Hambantota port.</p>
 </div>
 
 <div class="bbg__QA">
