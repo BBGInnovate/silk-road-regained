@@ -17,11 +17,11 @@ exclude_from_nav: true
 
 <div class="bbg__QA">
 	<h4>What are the aims?</h4>
-	<p>They are not solely economic. The Chinese say they include building political trust and cultural exchanges, and promoting "peace and friendship" among the nearly 70 participating countries.</p>
+	<p>They are not solely economic. The Chinese say they include building political trust and cultural exchanges, and promoting “peace and friendship” among the nearly 70 participating countries.</p>
 </div>
 
 <div class="bbg__QA">
-	<h4>What's the cost?</h4>
+	<h4>What’s the cost?</h4>
 	<p>An oft-cited number is $1 trillion in loans and investments from China, but some estimates go as high as $8 trillion over time. Skeptics say China might not be able  to afford it all.</p>
 </div>
 
@@ -31,13 +31,13 @@ exclude_from_nav: true
 </div>
 
 <div class="bbg__QA">
-	<h4>Who's benefiting?</h4>
-	<p>Critics say Chinese state-owned companies are getting most of the jobs, but China says benefits are broader. A 2018 report by Deloitte consulting says investors drawn to the 50-plus industrial parks built under Belt and Road are "boosting jobs, tax revenues and the local economic base."</p>
+	<h4>Who’s benefiting?</h4>
+	<p>Critics say Chinese state-owned companies are getting most of the jobs, but China says benefits are broader. A 2018 report by Deloitte consulting says investors drawn to the 50-plus industrial parks built under Belt and Road are “boosting jobs, tax revenues and the local economic base.”</p>
 </div>
 
 <div class="bbg__QA">
 	<h4>What about Africa?</h4>
-	<p>China's investments in Africa predate Belt and Road by more than a decade. A report last year by McKinsey & Company said up to 10,000 Chinese firms have created jobs for "several million" Africans, some trained to run Chinese-built railways. China is Africa's No. 1 trade partner.</p>
+	<p>China’s investments in Africa predate Belt and Road by more than a decade. A report last year by McKinsey & Company said up to 10,000 Chinese firms have created jobs for “several million” Africans, some trained to run Chinese-built railways. China is Africa's No. 1 trade partner.</p>
 </div>
 
 <div class="bbg__QA">
@@ -46,6 +46,6 @@ exclude_from_nav: true
 </div>
 
 <div class="bbg__QA">
-	<h4>Is 'Belt and Road' green?</h4>
-	<p>China put out principles for a 'green' Belt and Road. Although it's a leader in solar, wind and biofuel  at home, one count says China is involved with 200-plus coal-fired power plants globally. Environmental groups are watching to see if Chinese banks follow green credit guidelines for projects like Kenya's $2 billion coal plant at the coastal town of Lamu, a World Heritage Site. </p>
+	<h4>Is ‘Belt and Road’ green?</h4>
+	<p>China put out principles for a ‘green’ Belt and Road. Although it’s a leader in solar, wind and biofuel  at home, one count says China is involved with 200-plus coal-fired power plants globally. Environmental groups are watching to see if Chinese banks follow green credit guidelines for projects like Kenya's $2 billion coal plant at the coastal town of Lamu, a World Heritage Site. </p>
 </div>
