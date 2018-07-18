@@ -91,11 +91,21 @@ layout: default
 	{% endif %}
 	
 	{% if page.image %}
+		{% if page.image contains "https://gdb.voanews.com/" %}
+							<picture>
+								<source srcset="{{ page.image | replace: '_w1023', '_w1280' }}" media="(min-width: 992px)">
+								<source srcset="{{ page.image | replace: '_w1023', '_w992' }}" media="(min-width: 640px)">
+								<source srcset="{{ page.image | replace: '_w1023', '_w640' }}" media="(min-width: 420px)">
+								<img src="{{ page.image | replace: '_w1023', '_w420_h420' }}" alt="{{ page.alt }}" style="display: block; width: 100%; max-width: none;" />
+							</picture>
+
+		{% else %}
 							<img src="{{ site.canonical_url_base }}/img/{{ page.image }}" alt="{{ page.alt }}" style="max-width: none; width: 100%;"/>
+		{% endif %}
 	{% endif %}
 
 	{% if page.image and page.link-project %}
-							<!--<div class="bbg__image-link-highlight-box__promo"><h3>Explore the project</h3><div class="bbg__image-link-highlight-box__circle"></div></div>--></a>
+							</a>
 						</div>
 	{% endif %}
 	{% if page.cutline %}

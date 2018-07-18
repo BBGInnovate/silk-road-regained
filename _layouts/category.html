@@ -37,7 +37,17 @@ layout: default
 				
 				<a class="post-link" href="{{ site.canonical_url_base }}{{ site.categories[page.category][0].url | relative_url }}" style=" text-decoration: none;">
 {% if site.categories[page.category][0].image %}
-					<img src="{{ site.canonical_url_base }}/img/{{ site.categories[page.category][0].image }}" alt="{{ site.categories[page.category][0].cutline }}"  alt="{% if site.categories[page.category][0].cutline %}{{ site.categories[page.category][0].cutline }} {% endif %}" style="max-width: none; width: 100%;">
+		{% if site.categories[page.category][0].image contains "https://gdb.voanews.com/" %}
+							<picture>
+								<source srcset="{{ site.categories[page.category][0].image | replace: '_w1023', '_w1280' }}" media="(min-width: 992px)">
+								<source srcset="{{ site.categories[page.category][0].image | replace: '_w1023', '_w992' }}" media="(min-width: 640px)">
+								<source srcset="{{ site.categories[page.category][0].image | replace: '_w1023', '_w640' }}" media="(min-width: 420px)">
+								<img src="{{ site.categories[page.category][0].image | replace: '_w1023', '_w420_h420' }}" alt="{{ site.categories[page.category][0].alt }}" style="display: block; width: 100%; max-width: none;" />
+							</picture>
+
+		{% else %}
+							<img src="{{ site.canonical_url_base }}/img/{{ site.categories[page.category][0].image }}" alt="{{ site.categories[page.category][0].cutline }}"  alt="{% if site.categories[page.category][0].cutline %}{{ site.categories[page.category][0].cutline }} {% endif %}" style="max-width: none; width: 100%;">
+		{% endif %}
 {% else %}
 					<img src="https://placehold.it/1280x720">
 {% endif %}
@@ -63,7 +73,11 @@ layout: default
 		{% if post.thumbnail %}
 					<img src="{{ site.canonical_url_base }}/img/{{ post.thumbnail }}" alt="{%if post.cutline%}{{ post.cutline }} {% endif %}"/>
 		{% else %}
+			{% if post.image contains "https://gdb.voanews.com/" %}
+					<img src="{{ post.image | replace: '_w1023', '_w640_h360' }}" alt="{{ post.alt }}" style="display: block; width: 100%; max-width: none;" />
+			{% else %}
 					<img src="https://placehold.it/640x360">
+			{% endif %}
 		{% endif %}
 					<h3>{{ post.title | escape }} </h3>
 				</a>
