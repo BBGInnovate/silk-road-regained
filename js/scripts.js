@@ -1,5 +1,8 @@
 //Grab the spreadsheet KEY from the URL bar (NOT from the published window)
-//var public_spreadsheet_url = '1LHNJt8AXc6xLV1d8sX9ys15JA2UxWOeINYsHHXidcqk';
+var public_spreadsheet_url = '1YWA_xgglptdYQEyUQsro9j05004gTibHTqkItY0lEYw';
+var entities = ["Alhurra", "Martí", "RFA", "RFERL", "VOA", "BBG"];//"mbn", "rferl", "rfa", 
+var currentEntity = "BBG";
+
 var videoLoaded = false;
 
 var debugMode = true;
@@ -11,6 +14,31 @@ function logger(logString){
 }
 
 
+// ============================
+// |  Basic tabletopJS setup  |
+// ============================
+function loadSpreadsheet() {
+	Tabletop.init( { key: public_spreadsheet_url,
+	 	callback: showInfo,
+	 	wanted: entities } )
+}
+//function showInfo(data, tabletop) {
+function showInfo(data) {
+	logger("loaded spreadsheet data: ");
+	logger(data);
+
+	var rss = "";
+
+	var RSSnumberOfStories = 3;
+
+	for (var i = 0; i < data[currentEntity].elements.length; i++){
+		if (i < RSSnumberOfStories + 1){
+			rss += '<li><a href="' + data[currentEntity].elements[i].link + '">' + data[currentEntity].elements[i].headline + ' (' + data[currentEntity].elements[i].byline + ')</a></li>';
+		}
+	}
+	$("#rssListBBG").html(rss);
+
+}
 
 
 
@@ -133,6 +161,15 @@ $(window).on('load', function() {
 	}
 	loadVideo();
 
+
+
+	// =====================================
+	// |  load spreadsheet via tabletopJS  |
+	// =====================================
+	loadSpreadsheet();
+
+
+	/*
 	// =================================
 	// |  Parsing RSS with Javascript  |
 	// |  to reset the styles.         |
@@ -161,5 +198,6 @@ $(window).on('load', function() {
 		}, "jsonp");
 
 	});
+	*/
 
 });
