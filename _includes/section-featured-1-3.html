@@ -1,0 +1,75 @@
+
+
+					<div class="bbg__grid__two-thirds border-right">
+
+
+{% assign featuredTitle = include.titleFeatured %}
+{% assign sorted-posts = site.posts | where: "title",featuredTitle %}
+{% for post in sorted-posts %}
+
+	{% for cat in site.categories_list %}
+		{% if cat.name == post.categories.last %}
+			{% assign currentCat = cat %}
+		{% endif %}
+	{% endfor %}
+
+
+						<a href="{{ site.canonical_url_base }}{{ post.url | relative_url }}">
+
+							<picture>
+								<source srcset="{{ post.image | replace: '_w1023', '_w740_h420'}}" media="(min-width: 1092px)" />
+								<source srcset="{{ post.image | replace: '_w1023', '_w740_h740'}}" media="(min-width: 992px)" />
+								<source srcset="{{ post.image | replace: '_w1023', '_w740_h420'}}" media="(min-width: 700px)" />
+								<source srcset="{{ post.image | replace: '_w1023', '_w640_h640'}}" media="(min-width: 420px)" />
+								<img src="{{ post.image | replace: '_w1023', '_w420_h420'}}" />
+							</picture>
+
+							<div style="width: 85%; margin: 10px auto 50px auto; text-align: center;">
+								<h2 class="balance-text">{{ post.title }}</h2>
+								<p>{{ post.excerpt }}</p>
+								<p class="bbg__story__byline">By {{ post.byline }} | {{ currentCat.namePretty }}</p>
+							</div>
+						</a>
+
+
+
+
+{% endfor %}
+
+					</div><!--
+					--><div class="bbg__grid__one-third" style="margin-right: 0;">
+
+
+{% assign counter = 0 %}
+{% assign featuredCategory = include.featuredCategory %}
+
+{% for cat in site.categories_list %}
+	{% if cat.name == featuredCategory %}
+		{% assign currentCat = cat %}
+	{% endif %}
+{% endfor %}
+
+{% assign sorted-posts = site.posts | where: "categories",featuredCategory %}
+{% for post in sorted-posts limit: 4 %}
+
+	{% if post.title != featuredTitle and counter < 3 %}
+
+
+
+						<div class="bbg__story__tertiary--right">
+							<a href="{{ site.canonical_url_base }}{{ post.url | relative_url }}">
+								<img src="{{ post.image | replace: '_w1023', '_w320_h320'}}">
+								<div class="bbg__story__tertiary__text">
+									<h4>{{ post.title }}</h4>
+									<p>{{ post.excerpt | strip_html }}<span class="bbg__story__byline">({{ currentCat.namePretty }})</span></p>
+								</div>
+							</a>
+						</div>
+
+		{% assign counter = counter | plus: 1 %}
+	{% endif %}
+
+{% endfor %}
+
+
+					</div>

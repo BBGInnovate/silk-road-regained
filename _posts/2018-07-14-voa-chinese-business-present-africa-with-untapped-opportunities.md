@@ -3,10 +3,10 @@ layout: post-centered
 title:  Chinese Businesses Present Africa with Untapped Opportunities
 date:   2018-07-14
 categories: voa
-image: https://gdb.voanews.com/CF644924-F782-4F46-86C0-A52B5EBDE3DC_cx0_cy8_cw0_w1023_r1_s.jpg
+image: https://gdb.voanews.com/1EE43A96-DA3F-480A-9276-7F85540C0427_w1023_r0_s.jpg
 byline: Salem Solomon
 credit: AFP
-cutline: FILE - A boy holds the Djiboutian national flag in front of the Chinese national flag as he waits for Djibouti’s president, Ismaïl Omar Guelleh, before the launching ceremony of a China-financed 1,000-unit housing construction project in Djibouti, July 4, 2018.
+cutline: FILE - A security officer takes a selfie at the main gate of Djibouti International Free-Trade Zone after the inauguration ceremony in Djibouti, July 5, 2018.
 country: Africa
 link-project:  https://www.voanews.com/a/chinese-businesses-africa-untapped-opportunities/4479880.html
 ---
@@ -14,15 +14,6 @@ link-project:  https://www.voanews.com/a/chinese-businesses-africa-untapped-oppo
 Infrastructure and trade dominate news about China’s involvement in Africa.
 
 Projects like the $4 billion Standard Gauge Railway in Kenya and the $3.5 billion free-trade zone in Djibouti are among the biggest investments African countries have made in their industrialization, with broad implications for transportation and commerce.
-
-
-
-
-
-<div><img src="https://gdb.voanews.com/1EE43A96-DA3F-480A-9276-7F85540C0427_w760_r0_s.jpg"/></div>
-
-{:.bbg__cutline}
-FILE - A security officer takes a selfie at the main gate of Djibouti International Free-Trade Zone after the inauguration ceremony in Djibouti, July 5, 2018.
 
 
 
