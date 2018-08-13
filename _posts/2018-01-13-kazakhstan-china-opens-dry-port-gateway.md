@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  "In a desert far away, China opens a gateway on its new Silk Road"
+title-homepage: Far in the desert, China opens a new gateway to the West
+summary: The largest special economic zone in the former Soviet Union is emerging on the Kazakh-Chinese border — marred by protests, delays and corruption allegations.
 date:   2018-01-18
 categories: rferl
 image: rferl__kazakhstan-china-opens-dry-port-gateway.jpg

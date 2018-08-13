@@ -4,7 +4,8 @@
 
 
 {% assign featuredTitle = include.titleFeatured %}
-{% assign sorted-posts = site.posts | where: "title",featuredTitle %}
+{% assign featuredSlug = include.slugFeatured %}
+{% assign sorted-posts = site.posts | where: "slug",featuredSlug %}
 {% for post in sorted-posts %}
 
 	{% for cat in site.categories_list %}
@@ -52,7 +53,7 @@
 {% assign sorted-posts = site.posts | where: "categories",featuredCategory %}
 {% for post in sorted-posts limit: 4 %}
 
-	{% if post.title != featuredTitle and counter < 3 %}
+	{% if post.slug != featuredSlug and counter < 3 %}
 
 
 

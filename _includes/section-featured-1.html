@@ -1,0 +1,27 @@
+{% assign featuredSlug = include.slugFeatured %}
+{% assign sorted-posts = site.posts | where: "slug",featuredSlug %}
+{% for post in sorted-posts %}
+
+	{% for cat in site.categories_list %}
+		{% if cat.name == post.categories.last %}
+			{% assign currentCat = cat %}
+		{% endif %}
+	{% endfor %}
+
+
+						<a href="{{ site.canonical_url_base }}{{ post.url | relative_url }}">
+							<div style="position: relative;">
+								<img src="{% if post.image contains 'https://gdb.voanews.com/' %}{{ post.image }}{% else %}img/{{ post.image }}{% endif %}" style="position: relative; z-index: 9990; display:block;" />
+								<div class="bbg__featured-image__shadow"/></div>
+								<div class="bbg__title-on-photo">
+									<h2 class="bbg__featured__headline balance-text">{{ post.title-homepage | default: post.title }}</h2>
+
+									<p>{{ post.summary | default: post.excerpt | strip_html }}</p>
+
+									<p class="bbg__story__byline">By {{ post.byline }} | {{ currentCat.namePretty }}</p>
+								</div>
+
+							</div>								
+						</a>
+
+{% endfor %}
