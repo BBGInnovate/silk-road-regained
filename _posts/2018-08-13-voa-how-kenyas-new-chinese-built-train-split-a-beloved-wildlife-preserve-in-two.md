@@ -3,7 +3,7 @@ layout: post-centered
 title:  How Kenya's new Chinese-Built Train Split a Beloved Wildlife Preserve in Two
 date:   2018-08-13
 categories: voa
-image: https://gdb.voanews.com/7302A01B-8D7A-4A8F-8B53-7B34DECD4776_w1023_r1_s.jpg
+image: https://gdb.voanews.com/E336AAE7-C9DE-4EF6-931D-F5783959DB40_w1023.jpg
 byline: Paul Ndiho
 youtube: xgJmyYsfFzI
 country: Kenya
