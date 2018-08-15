@@ -22,12 +22,12 @@
 								<source srcset="{{ post.image | replace: '_w1023', '_w740_h740'}}" media="(min-width: 992px)" />
 								<source srcset="{{ post.image | replace: '_w1023', '_w740_h420'}}" media="(min-width: 700px)" />
 								<source srcset="{{ post.image | replace: '_w1023', '_w640_h640'}}" media="(min-width: 420px)" />
-								<img src="{{ post.image | replace: '_w1023', '_w420_h420'}}" />
+								<img src="{{ post.image | replace: '_w1023', '_w420_h420'}}" style="max-width: none; width: 100%;" />
 							</picture>
 
 							<div style="width: 85%; margin: 10px auto 30px auto; text-align: center;">
-								<h2 class="balance-text bbg__featured__headline">{{ post.title }}</h2>
-								<p>{{ post.excerpt }}</p>
+								<h2 class="balance-text bbg__featured__headline">{%if post.title-homepage %}{{ post.title-homepage }}{% else %}{{ post.title }}{% endif %}</h2>
+								<p>{%if post.summary %}{{ post.summary }}{% else %}{{ post.excerpt }}{% endif %}</p>
 								<p class="bbg__story__byline">By {{ post.byline }} | {{ currentCat.namePretty }}</p>
 							</div>
 						</a>
@@ -61,7 +61,7 @@
 							<a href="{{ site.canonical_url_base }}{{ post.url | relative_url }}">
 								<img src="{{ post.image | replace: '_w1023', '_w640_h360'}}">
 								<div class="bbg__story__tertiary__text">
-									<h4>{{ post.title }}</h4>
+									<h4>{%if post.title-homepage %}{{ post.title-homepage }}{% else %}{{ post.title }}{% endif %}</h4>
 									<p>{{ post.excerpt | strip_html }}<span class="bbg__story__byline">({{ currentCat.namePretty }})</span></p>
 								</div>
 							</a>

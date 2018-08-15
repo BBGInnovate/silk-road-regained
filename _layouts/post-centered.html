@@ -67,7 +67,7 @@ layout: default
 	{% endif %}
 
 	{% if page.image and page.link-project %}
-							</a>
+							<!--<div class="bbg__image-link-highlight-box__promo"><h3>Explore the project</h3><div class="bbg__image-link-highlight-box__circle"></div></div>--></a>
 						</div>
 	{% endif %}
 	{% if page.cutline %}
@@ -132,6 +132,38 @@ layout: default
 								</div>
 
 							</div>
+
+
+{% if page.series %}
+	<div class="bbg__grid__full" style="background-color: #FFF;">
+		<div style="max-width: 640px; margin: 0 auto;">
+
+			<div class="bbg__grid__full">
+				<h3 class="bbg__label" style="margin-bottom: 0; padding-top: 20px; border-top: 1px dotted #CCC; font-size: 14px;">Explore the series</h3>
+			</div>
+
+			<div class="voa__grid__full">
+			<!--
+	{% assign sorted-posts = site.posts | where: "series","true" %}
+	{% for post in sorted-posts %}
+		{% if post.title != page.title %}
+		--><div class="bbg__grid__one-half">
+			<a class="bbg__related-link" href="{{ site.canonical_url_base }}{{ post.url | relative_url }}">
+				<img src="{{ post.image | replace: '_w1023', '_w420_h240'}}">
+				<h5>{{ post.title }}</h5>
+			</a>
+		</div><!--
+
+		{% endif %}
+
+	{% endfor %}
+		-->
+
+			</div>
+		</div>
+	</div>
+
+{% endif %}
 
 					</div><!-- .bbg__grid__full -->
 

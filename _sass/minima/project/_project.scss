@@ -1120,4 +1120,16 @@ body.noScroll{
 		}
 	}
 
+	.bbg__grid__full {
+		a.bbg__related-link {
+			&:hover {
+				text-decoration: underline;
+			}
+
+			h5 {
+				color: #000;
+			}
+		}
+	}
+
 }
