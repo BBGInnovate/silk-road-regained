@@ -104,9 +104,19 @@ layout: default
 	{% if page.byline == "Associated Press" or page.byline == "Reuters" %}
 									<p class="bbg__byline" style="font-family: Arial, sans-serif; font-size: 14px;"> {{ page.byline }}</p>
 	{% else %}
-									<p class="bbg__byline" style="font-family: Arial, sans-serif; font-size: 14px;">By {{ page.byline }} | {{ site.categories_list[currentCat].namePretty }}</p>
+									<p class="bbg__byline" style="font-family: Arial, sans-serif; font-size: 14px; {% if page.translation %}margin-bottom: 0;{% endif %}">By {{ page.byline }} | {{ site.categories_list[currentCat].namePretty }}</p>
 	{% endif %}
 {% endif %}
+
+
+{% if page.translation %}
+	{% if page.translation-phrase %}
+		<p class="bbg__translation-link"><a href="{{ page.translation }}">{{ page.translation-phrase }}</a></p>
+	{% else %}
+		<p class="bbg__translation-link"><a href="{{ page.translation }}">Read the translation</a></p>
+	{% endif %}
+{% endif %}
+
 
 
 {% if page.dateline %}
