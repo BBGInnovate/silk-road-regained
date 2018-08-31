@@ -104,7 +104,12 @@ layout: default
 	{% if page.byline == "Associated Press" or page.byline == "Reuters" %}
 									<p class="bbg__byline" style="font-family: Arial, sans-serif; font-size: 14px;"> {{ page.byline }}</p>
 	{% else %}
+
+		{% if site.categories_list[currentCat].name == "rfa" and page.affiliate %}
+									<p class="bbg__byline" style="font-family: Arial, sans-serif; font-size: 14px; {% if page.translation %}margin-bottom: 0;{% endif %}">By {{ page.byline }} | BenarNews</p>
+		{% else %}
 									<p class="bbg__byline" style="font-family: Arial, sans-serif; font-size: 14px; {% if page.translation %}margin-bottom: 0;{% endif %}">By {{ page.byline }} | {{ site.categories_list[currentCat].namePretty }}</p>
+		{% endif %}
 	{% endif %}
 {% endif %}
 
@@ -134,7 +139,13 @@ layout: default
 	{% endif %}	
 
 	{% if page.link-project %}
+
+		{% if site.categories_list[currentCat].name == "rfa" and page.affiliate %}
+									This story originally appeared on <a href="{{ page.link-project }}">BenarNews.org</a>. ({{ page.date | date: '%B %-d, %Y' }})
+
+		{% else %}
 									This story originally appeared on <a href="{{ page.link-project }}">{{ site.categories_list[currentCat].urlPretty }}</a>. ({{ page.date | date: '%B %-d, %Y' }})
+		{% endif %}
 	{% endif %}
 									</p>
 {% endif %}
