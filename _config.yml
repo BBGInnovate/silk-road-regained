@@ -27,7 +27,7 @@ development_warning: This site is currently under active development.
 
 categories_list:
   - name: voa
-    namePretty: VOA
+    namePretty: VOA News
     nameSheet: VOA
     nameFull: Voice of America
     logo: /img/logo__voa.png
