@@ -7,6 +7,7 @@ image:  https://gdb.voanews.com/BB417C35-EB23-4242-860A-AAC08AD0D858_w1023_r1_s.
 byline: Salem Solomon
 credit: AP
 cutline: FILE - Zambia’s President Edgar Lungu, left, shakes hands with China’s President Xi Jinping, prior to their bilateral meeting at the Great Hall of the People, in Beijing, China, Sept. 1, 2018. Some are expressing concerns that Beijing is pursuing debt-trap diplomacy vis-a-vis African countries.
+region: Africa
 country: Zambia
 includeSidebar: sidebarGraphic.html
 graphicVariable: Loans

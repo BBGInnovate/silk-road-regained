@@ -7,7 +7,7 @@ image: https://gdb.voanews.com/E3752EB2-7662-4B3F-AB15-590A40F2235F_cx0_cy10_cw0
 byline: Salem Solomon
 credit: AP
 cutline: Chinese President Xi Jinping, right, and Congo President Denis Sassou Nguesso listen to their national anthems during a welcoming ceremony inside the Great Hall of the People in Beijing, Sept. 5, 2018.
-country: Africa
+region: Africa
 link-project: https://www.voanews.com/a/china-offers-debt-relief-but-most-african-countries-borrow-elsewhere/4560319.html
 ---
 

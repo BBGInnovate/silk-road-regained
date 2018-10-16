@@ -8,6 +8,7 @@ thumbnail: voa__chinas-military-footprint-grows-alongside-economic-interests-in-
 byline: Salem Solomon
 credit: AFP
 cutline: Chinese People's Liberation Army personnel attend the opening ceremony of China's new military base in Djibouti, Aug. 1, 2017.
+region: Africa
 country: Djibouti
 link-project:  "https://www.voanews.com/a/china-military-economy-africa/4298266.html"
 ---

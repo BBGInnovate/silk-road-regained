@@ -7,7 +7,7 @@ image: https://gdb.voanews.com/77566DCB-31CE-4504-9879-984197A63C43_cx9_cy12_cw7
 byline: Salem Solomon
 credit: AP
 cutline: FILE - Kenyan President Uhuru Kenyatta watches a cargo train carrying port containers begin its opening run from Mombasa to Nairobi, Kenya, May 30, 2017. The project was financed by China.
-country: Africa
+region: Africa
 includeSidebar: sidebarGraphic.html
 graphicVariable: Loans
 link-project:  https://www.voanews.com/a/china-investment-strategies-africa-partners-face-risks/4478885.html

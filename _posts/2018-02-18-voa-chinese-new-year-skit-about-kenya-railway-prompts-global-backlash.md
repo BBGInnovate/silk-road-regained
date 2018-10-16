@@ -9,6 +9,7 @@ byline: Salem Solomon
 credit: Reuters
 cutline: Chinese actor Lou Naiming (2-R) performs a skit on a Lunar New Year gala in Beijing, Feb. 15, 2018.
 includeTweets: true
+region: Africa
 link-project:  "https://www.voanews.com/a/chinese-new-year-skit-about-kenya-railway-prompts-global-backlash/4259601.html"
 ---
 

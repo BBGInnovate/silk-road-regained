@@ -42,15 +42,10 @@
 						
 						
 {% assign counter = 0 %}
-{% assign featuredCategory = include.featuredCategory %}
+{% assign featuredRegion = include.featuredRegion %}
 <!--
-{% for cat in site.categories_list %}
-	{% if cat.name == featuredCategory %}
-		{% assign currentCat = cat %}
-	{% endif %}
-{% endfor %}
 
-{% assign sorted-posts = site.posts | where: "categories",featuredCategory %}
+{% assign sorted-posts = site.posts | where: "region",featuredRegion %}
 {% for post in sorted-posts limit: 3 %}
 
 	{% if post.slug != featuredSlug and counter < 2 %}

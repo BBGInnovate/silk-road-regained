@@ -8,7 +8,7 @@ thumbnail: voa__tillerson-chinas-approach-to-africa-encourages-dependency--640x3
 byline: Nike Ching
 cutline: U.S. Secretary of State Rex Tillerson, right, walks with Kenya’s President Uhuru Kenyatta, left, past metal sculptures of animals, inside State House in Nairobi, Kenya, March 9, 2018.
 youtube: ypGFSpTbNaQ
-country: Africa
+region: Africa
 link-project:  "https://www.voanews.com/a/tillerson-china-approach-to-africa-encourages-dependency/4282809.html"
 tagline: VOA’s Wayne Lee contributed to this report.
 includeSidebar: sidebarMap.html

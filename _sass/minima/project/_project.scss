@@ -461,6 +461,10 @@ body.noScroll{
 	@media only screen and (min-width: 920px) {
 		.bbg__featured__headline {
 			font-size: 48px;
+
+			&.side {
+				font-size: 42px;
+			}
 		}
 		.bbg__featured__headline--small {
 			font-size: 36px;

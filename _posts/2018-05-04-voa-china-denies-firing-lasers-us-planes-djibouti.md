@@ -8,6 +8,7 @@ thumbnail: voa__china-denies-firing-lasers-us-planes-djibouti--640x360.jpg
 byline: Salem Solomon
 credit: AFP
 cutline: FILE - In this image released by the U.S. Department of Defense, U.S. Marines and sailors prepare to board a KC-130J Marine Super Hercules at Camp Lemonnier, Djibouti, Dec. 24, 2013.
+region: Africa
 country: Djibouti
 includeSidebar: sidebarGraphic.html
 graphicVariable: Loans

@@ -6,6 +6,7 @@ categories: voa
 image: https://gdb.voanews.com/E336AAE7-C9DE-4EF6-931D-F5783959DB40_w1023.jpg
 byline: Paul Ndiho
 youtube: xgJmyYsfFzI
+region: Africa
 country: Kenya
 series: true
 ---

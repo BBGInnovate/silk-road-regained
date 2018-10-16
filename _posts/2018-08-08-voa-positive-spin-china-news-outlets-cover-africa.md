@@ -7,7 +7,7 @@ image: https://gdb.voanews.com/CF644924-F782-4F46-86C0-A52B5EBDE3DC_cx0_cy6_cw0_
 byline: Salem Solomon
 credit: AFP
 cutline: FILE - A boy holds the Djiboutian national flag in front of the Chinese national flag before the launching ceremony of China-financed 1,000-unit housing construction project in Djibouti, July 4, 2018.
-country: Africa
+region: Africa
 link-project: https://www.voanews.com/a/positive-spin-china-news-outlets-cover-africa/4518628.html
 ---
 

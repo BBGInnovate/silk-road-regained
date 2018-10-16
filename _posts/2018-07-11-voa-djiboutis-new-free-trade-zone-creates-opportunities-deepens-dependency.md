@@ -7,6 +7,7 @@ image: https://gdb.voanews.com/279923D5-1D14-467D-B39F-811B57BAC0F8_cx0_cy10_cw0
 byline: Salem Solomon
 credit: AFP
 cutline: National flags of China and Djibouti fly in front of Djibouti International Free-Trade Zone before the inauguration ceremony in Djibouti, July 5, 2018.
+region: Africa
 country: Djibouti
 includeSidebar: sidebarGraphic.html
 graphicVariable: Loans

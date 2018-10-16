@@ -7,7 +7,7 @@ image: https://gdb.voanews.com/253B595C-5E98-4740-9D77-474C62B10FE1_cx0_cy9_cw0_
 byline: Salem Solomon
 credit: Reuters
 cutline: People walk past an installation set up ahead of the Forum on China-Africa Cooperation (FOCAC), in Beijing, China, Aug. 24, 2018.
-country: Africa
+region: Africa
 link-project: https://www.voanews.com/a/for-african-countries-china-forum-provides-shot-at-better-deals/4552007.html
 ---
 

@@ -8,6 +8,7 @@ thumbnail: voa__zimbabwes-leader-thanks-chinas-xi-pledges-to-boost-ties--640x360
 byline: Associated Press
 credit: AP
 cutline: Zimbabwean President Emmerson Mnangagwa, left, shakes hands with Chinese President Xi Jinping as they pose for the media after a signing ceremony at the Great Hall of the People in Beijing, China, April 3, 2018.
+region: Africa
 country: Zimbabwe
 includeSidebar: sidebarGraphic.html
 graphicVariable: Loans

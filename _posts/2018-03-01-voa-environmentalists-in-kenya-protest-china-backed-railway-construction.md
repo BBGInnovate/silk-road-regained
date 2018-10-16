@@ -8,6 +8,7 @@ thumbnail: voa__environmentalists-in-kenya-protest-china-backed-railway-construc
 byline: Rael Ombuor
 credit: AFP
 cutline: Environmental activists chant slogans as they carry placards and banners during a protest in Nairobi, Kenya, March 1, 2018, against a government decision to construct a standard-gauge railway line across the Nairobi National Park.
+region: Africa
 country: Kenya
 dateline: Nairobi
 includeSidebar: sidebarGraphic.html

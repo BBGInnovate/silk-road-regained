@@ -7,7 +7,7 @@ image: https://gdb.voanews.com/1EE43A96-DA3F-480A-9276-7F85540C0427_w1023_r0_s.j
 byline: Salem Solomon
 credit: AFP
 cutline: FILE - A security officer takes a selfie at the main gate of Djibouti International Free-Trade Zone after the inauguration ceremony in Djibouti, July 5, 2018.
-country: Africa
+region: Africa
 link-project:  https://www.voanews.com/a/chinese-businesses-africa-untapped-opportunities/4479880.html
 ---
 

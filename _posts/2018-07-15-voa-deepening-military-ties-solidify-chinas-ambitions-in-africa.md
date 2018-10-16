@@ -7,7 +7,7 @@ image: https://gdb.voanews.com/0C91CF56-DB11-4B8A-A52E-59553A8E18FB_cx0_cy5_cw0_
 byline: Salem Solomon
 credit: AFP
 cutline: FILE - Chinese People’s Liberation Army personnel attend the opening ceremony of China’s military base in Djibouti, Aug. 1, 2017.
-country: Africa
+region: Africa
 link-project:  https://www.voanews.com/a/deepening-military-ties-solidify-china-ambitions-in-africa/4483010.html
 ---
 

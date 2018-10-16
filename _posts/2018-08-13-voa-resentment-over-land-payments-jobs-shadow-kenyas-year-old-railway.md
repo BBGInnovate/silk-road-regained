@@ -6,6 +6,7 @@ categories: voa
 image: https://gdb.voanews.com/F1CF13DE-3539-453B-819A-3D5F375B0D2E_w1023.jpg
 byline: Betty Ayoub
 youtube: oUUNSKM0hiQ
+region: Africa
 country: Kenya
 series: true
 ---

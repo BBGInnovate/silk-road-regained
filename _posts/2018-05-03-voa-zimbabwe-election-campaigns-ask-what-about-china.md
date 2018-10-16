@@ -8,6 +8,7 @@ thumbnail: voa__zimbabwe-election-campaigns-ask-what-about-china--640x360.jpg
 byline: Anita Powell
 credit: Reuters
 cutline: FILE - Zimbabwean President Emmerson Mnangagwa shakes hands with Chinese Premier Li Keqiang before their meeting at the Great Hall of the People in Beijing, China, April 4, 2018.
+region: Africa
 country: Zimbabwe
 includeSidebar: sidebarGraphic.html
 graphicVariable: Loans

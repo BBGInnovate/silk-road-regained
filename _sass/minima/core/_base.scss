@@ -260,6 +260,10 @@
 
 		}
 
+		@media only screen and (min-width: $media__large) {
+			padding-bottom: 30px !important;
+		}
+
 
 		.bbg__title-card__shadow {
 			background-image: linear-gradient(transparent 0%,#000 200%);

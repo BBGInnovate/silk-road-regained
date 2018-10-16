@@ -7,6 +7,7 @@ image: https://gdb.voanews.com/9CB857B6-7AE6-41BC-A468-96B577AE0429_w1023_r1_s.j
 byline: Salem Solomon
 credit: Reuters
 cutline: FILE - A bank clerk counts Chinese banknotes at a branch of Industrial and Commercial Bank of China in Huaibei, Anhui Province, June 8, 2012. The central banks of 14 African countries are considering adding the Chinese yuan to their foreign reserves.
+region: Africa
 country: Djibouti
 dateline: Washington
 link-project:  https://www.voanews.com/a/african-banks-chinese-yuan/4461989.html
