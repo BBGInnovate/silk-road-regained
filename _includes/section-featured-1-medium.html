@@ -1,0 +1,31 @@
+{% assign featuredRegion = include.featuredRegion %}
+{% assign sorted-posts = site.posts | where: "region",featuredRegion %}
+{% for post in sorted-posts %}
+
+
+	<div class="bbg__grid__two-thirds">
+		<a href="{{ site.canonical_url_base }}{{ post.url | relative_url }}">
+
+			<picture>
+				<source srcset="{{ post.image | replace: '_w1023', '_w920_h518'}}" media="(min-width: 1092px)" />
+				<source srcset="{{ post.image | replace: '_w1023', '_w740_h416'}}" media="(min-width: 992px)" />
+				<source srcset="{{ post.image | replace: '_w1023', '_w740_h518'}}" media="(min-width: 800px)" />
+				<source srcset="{{ post.image | replace: '_w1023', '_w640_h640'}}" media="(min-width: 640px)" />
+				<source srcset="{{ post.image | replace: '_w1023', '_w640_h640'}}" media="(min-width: 420px)" />
+				<img src="{{ post.image | replace: '_w1023', '_w420_h420'}}" style="max-width: none; width: 100%;" />
+			</picture>
+
+		</a>
+	</div><!--
+	--><div class="bbg__grid__one-third">
+		<a href="{{ site.canonical_url_base }}{{ post.url | relative_url }}">
+			<h2 class="bbg__featured__headline side balance-text">{{ post.title-homepage | default: post.title }}</h2>
+		</a>
+
+		<p>{{ post.summary | default: post.excerpt | strip_html }}</p>
+
+		<p class="bbg__story__byline">By {{ post.byline }} | {{ currentCat.namePretty }}</p>
+	</div>
+
+
+{% endfor %}
