@@ -1,6 +1,6 @@
 {% assign featuredRegion = include.featuredRegion %}
 {% assign sorted-posts = site.posts | where: "region",featuredRegion %}
-{% for post in sorted-posts %}
+{% for post in sorted-posts limit:1 %}
 
 
 	<div class="bbg__grid__two-thirds">
