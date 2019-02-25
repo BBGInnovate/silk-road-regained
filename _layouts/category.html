@@ -76,10 +76,10 @@ layout: default
 			{% if post.image contains "https://gdb.voanews.com/" %}
 					<img src="{{ post.image | replace: '_w1023', '_w640_h360' }}" alt="{{ post.alt }}" style="display: block; width: 100%; max-width: none;" />
 			{% else %}
-					<img src="https://placehold.it/640x360">
+					<img src="{{ post.image }}">
 			{% endif %}
 		{% endif %}
-					<h3>{{ post.title | escape }} </h3>
+					<h3>{{ post.title | escape }}</h3>
 				</a>
 			</div><!--
 	{% endif %}
